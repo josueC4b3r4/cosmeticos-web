@@ -1,18 +1,37 @@
 [
-  {
-    "id": "labial-01",
-    "nombre": "Labial Matte Rojo",
-    "precio": 199,
-    "categoria": "Labiales",
-    "descripcion": "Acabado matte y larga duración.",
-    "imagen": "img/productos/labial-01.jpg"
-  },
-  {
-    "id": "crema-01",
-    "nombre": "Crema Hidratante",
-    "precio": 249,
-    "categoria": "Skincare",
-    "descripcion": "Hidratación ligera para uso diario.",
-    "imagen": "img/productos/crema-01.jpg"
-  }
+  { "id":"p01","nombre":"Producto 01","precio":199,"categoria":"Skincare","descripcion":"Descripción corta del producto 01.","imagen":"img/productos/corrector.png" },
+  { "id":"p02","nombre":"Producto 02","precio":159,"categoria":"Skincare","descripcion":"Descripción corta del producto 02.","imagen":"img/productos/Labial.jfif" },
+  { "id":"p03","nombre":"Producto 03","precio":249,"categoria":"Skincare","descripcion":"Descripción corta del producto 03.","imagen":"img/productos/p03.jpg" },
+  { "id":"p04","nombre":"Producto 04","precio":299,"categoria":"Skincare","descripcion":"Descripción corta del producto 04.","imagen":"img/productos/p04.jpg" },
+  { "id":"p05","nombre":"Producto 05","precio":189,"categoria":"Skincare","descripcion":"Descripción corta del producto 05.","imagen":"img/productos/p05.jpg" },
+
+  { "id":"p06","nombre":"Producto 06","precio":199,"categoria":"Maquillaje","descripcion":"Descripción corta del producto 06.","imagen":"img/productos/p06.jpg" },
+  { "id":"p07","nombre":"Producto 07","precio":129,"categoria":"Maquillaje","descripcion":"Descripción corta del producto 07.","imagen":"img/productos/p07.jpg" },
+  { "id":"p08","nombre":"Producto 08","precio":219,"categoria":"Maquillaje","descripcion":"Descripción corta del producto 08.","imagen":"img/productos/p08.jpg" },
+  { "id":"p09","nombre":"Producto 09","precio":179,"categoria":"Maquillaje","descripcion":"Descripción corta del producto 09.","imagen":"img/productos/p09.jpg" },
+  { "id":"p10","nombre":"Producto 10","precio":149,"categoria":"Maquillaje","descripcion":"Descripción corta del producto 10.","imagen":"img/productos/p10.jpg" },
+
+  { "id":"p11","nombre":"Producto 11","precio":349,"categoria":"Perfumes","descripcion":"Descripción corta del producto 11.","imagen":"img/productos/p11.jpg" },
+  { "id":"p12","nombre":"Producto 12","precio":399,"categoria":"Perfumes","descripcion":"Descripción corta del producto 12.","imagen":"img/productos/p12.jpg" },
+  { "id":"p13","nombre":"Producto 13","precio":299,"categoria":"Perfumes","descripcion":"Descripción corta del producto 13.","imagen":"img/productos/p13.jpg" },
+  { "id":"p14","nombre":"Producto 14","precio":459,"categoria":"Perfumes","descripcion":"Descripción corta del producto 14.","imagen":"img/productos/p14.jpg" },
+  { "id":"p15","nombre":"Producto 15","precio":279,"categoria":"Perfumes","descripcion":"Descripción corta del producto 15.","imagen":"img/productos/p15.jpg" },
+
+  { "id":"p16","nombre":"Producto 16","precio":99,"categoria":"Cabello","descripcion":"Descripción corta del producto 16.","imagen":"img/productos/p16.jpg" },
+  { "id":"p17","nombre":"Producto 17","precio":139,"categoria":"Cabello","descripcion":"Descripción corta del producto 17.","imagen":"img/productos/p17.jpg" },
+  { "id":"p18","nombre":"Producto 18","precio":189,"categoria":"Cabello","descripcion":"Descripción corta del producto 18.","imagen":"img/productos/p18.jpg" },
+  { "id":"p19","nombre":"Producto 19","precio":229,"categoria":"Cabello","descripcion":"Descripción corta del producto 19.","imagen":"img/productos/p19.jpg" },
+  { "id":"p20","nombre":"Producto 20","precio":169,"categoria":"Cabello","descripcion":"Descripción corta del producto 20.","imagen":"img/productos/p20.jpg" },
+
+  { "id":"p21","nombre":"Producto 21","precio":79,"categoria":"Accesorios","descripcion":"Descripción corta del producto 21.","imagen":"img/productos/p21.jpg" },
+  { "id":"p22","nombre":"Producto 22","precio":89,"categoria":"Accesorios","descripcion":"Descripción corta del producto 22.","imagen":"img/productos/p22.jpg" },
+  { "id":"p23","nombre":"Producto 23","precio":119,"categoria":"Accesorios","descripcion":"Descripción corta del producto 23.","imagen":"img/productos/p23.jpg" },
+  { "id":"p24","nombre":"Producto 24","precio":149,"categoria":"Accesorios","descripcion":"Descripción corta del producto 24.","imagen":"img/productos/p24.jpg" },
+  { "id":"p25","nombre":"Producto 25","precio":109,"categoria":"Accesorios","descripcion":"Descripción corta del producto 25.","imagen":"img/productos/p25.jpg" },
+
+  { "id":"p26","nombre":"Producto 26","precio":199,"categoria":"Cuerpo","descripcion":"Descripción corta del producto 26.","imagen":"img/productos/p26.jpg" },
+  { "id":"p27","nombre":"Producto 27","precio":229,"categoria":"Cuerpo","descripcion":"Descripción corta del producto 27.","imagen":"img/productos/p27.jpg" },
+  { "id":"p28","nombre":"Producto 28","precio":259,"categoria":"Cuerpo","descripcion":"Descripción corta del producto 28.","imagen":"img/productos/p28.jpg" },
+  { "id":"p29","nombre":"Producto 29","precio":179,"categoria":"Cuerpo","descripcion":"Descripción corta del producto 29.","imagen":"img/productos/p29.jpg" },
+  { "id":"p30","nombre":"Producto 30","precio":149,"categoria":"Cuerpo","descripcion":"Descripción corta del producto 30.","imagen":"img/productos/p30.jpg" }
 ]

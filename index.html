@@ -8,24 +8,31 @@
 </head>
 <body>
   <header class="header">
-    <h1>Catálogo de Cosméticos</h1>
-    <p>Elige un producto y compártelo o pídelo por WhatsApp.</p>
+  <div class="header-inner">
+    <div class="brand">
+      <h1>Tu Tienda de Cosméticos</h1>
+      <p>Catálogo • Skincare • Maquillaje • Perfumes</p>
+    </div>
 
     <div class="controls">
-      <input id="search" type="search" placeholder="Buscar (ej. labial, crema...)" />
-      <select id="category">
+      <input id="search" class="input" type="search" placeholder="Buscar (labial, crema, perfume...)" />
+      <select id="category" class="select">
         <option value="all">Todas las categorías</option>
       </select>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main class="container">
-    <section id="grid" class="grid"></section>
-  </main>
+  <section class="hero">
+  <div>
+    <h2>Nuevos productos cada semana</h2>
+    <small>Comparte o pide por WhatsApp en un toque.</small>
+  </div>
+  <div class="pill">✨ Catálogo 2026</div>
+</section>
 
-  <footer class="footer">
-    <small>© 2026 - Tu tienda</small>
-  </footer>
+<section id="grid" class="grid"></section>
+
 
   <script src="js/app.js"></script>
 </body>
