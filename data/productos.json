@@ -1,0 +1,18 @@
+[
+  {
+    "id": "labial-01",
+    "nombre": "Labial Matte Rojo",
+    "precio": 199,
+    "categoria": "Labiales",
+    "descripcion": "Acabado matte y larga duración.",
+    "imagen": "img/productos/labial-01.jpg"
+  },
+  {
+    "id": "crema-01",
+    "nombre": "Crema Hidratante",
+    "precio": 249,
+    "categoria": "Skincare",
+    "descripcion": "Hidratación ligera para uso diario.",
+    "imagen": "img/productos/crema-01.jpg"
+  }
+]
