@@ -1,9 +1,9 @@
 [
-  { "id":"p01","nombre":"Producto 01","precio":199,"categoria":"Skincare","descripcion":"Descripción corta del producto 01.","imagen":"img/productos/corrector.png" },
-  { "id":"p02","nombre":"Producto 02","precio":159,"categoria":"Skincare","descripcion":"Descripción corta del producto 02.","imagen":"img/productos/Labial.jfif" },
-  { "id":"p03","nombre":"Producto 03","precio":249,"categoria":"Skincare","descripcion":"Descripción corta del producto 03.","imagen":"img/productos/p03.jpg" },
-  { "id":"p04","nombre":"Producto 04","precio":299,"categoria":"Skincare","descripcion":"Descripción corta del producto 04.","imagen":"img/productos/p04.jpg" },
-  { "id":"p05","nombre":"Producto 05","precio":189,"categoria":"Skincare","descripcion":"Descripción corta del producto 05.","imagen":"img/productos/p05.jpg" },
+  { "id":"p01","nombre":"Producto","precio":49,"categoria":"Skincare","descripcion":"Rubor Bissu","imagen":"img/productos/Rubor01.jfif" },
+  { "id":"p02","nombre":"Producto","precio":170,"categoria":"Skincare","descripcion":"Crema facial hidratante para piel grasa.","imagen":"img/productos/Crema01.jfif" },
+  { "id":"p03","nombre":"Producto ","precio":65,"categoria":"Skincare","descripcion":"Sombras quintero Bissu..","imagen":"img/productos/Sombras01.jfif" },
+  { "id":"p04","nombre":"OFERTA 40%","precio":189,"categoria":"Skincare","descripcion":"Protector solar facial con ácido hialurónico.","imagen":"img/productos/Protector01.jfif" },
+  { "id":"p05","nombre":"OFERTA 40%","precio":200,"categoria":"Skincare","descripcion":"Primer Blur  control de brillo, para sellar perfectamente tu maquillaje.","imagen":"img/productos/Blur01.jfif" },
 
   { "id":"p06","nombre":"Producto 06","precio":199,"categoria":"Maquillaje","descripcion":"Descripción corta del producto 06.","imagen":"img/productos/p06.jpg" },
   { "id":"p07","nombre":"Producto 07","precio":129,"categoria":"Maquillaje","descripcion":"Descripción corta del producto 07.","imagen":"img/productos/p07.jpg" },
