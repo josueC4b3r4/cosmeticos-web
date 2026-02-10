@@ -1,37 +1,162 @@
 [
-  { "id":"p01","nombre":"Producto","precio":49,"categoria":"Skincare","descripcion":"Rubor Bissu","imagen":"img/productos/Rubor01.jfif" },
-  { "id":"p02","nombre":"Producto","precio":170,"categoria":"Skincare","descripcion":"Crema facial hidratante para piel grasa.","imagen":"img/productos/Crema01.jfif" },
-  { "id":"p03","nombre":"Producto ","precio":65,"categoria":"Skincare","descripcion":"Sombras quintero Bissu..","imagen":"img/productos/Sombras01.jfif" },
-  { "id":"p04","nombre":"OFERTA 40%","precio":189,"categoria":"Skincare","descripcion":"Protector solar facial con ácido hialurónico.","imagen":"img/productos/Protector01.jfif" },
-  { "id":"p05","nombre":"OFERTA 40%","precio":200,"categoria":"Skincare","descripcion":"Primer Blur  control de brillo, para sellar perfectamente tu maquillaje.","imagen":"img/productos/Blur01.jfif" },
-
-  { "id":"p06","nombre":"Producto 06","precio":199,"categoria":"Maquillaje","descripcion":"Descripción corta del producto 06.","imagen":"img/productos/p06.jpg" },
-  { "id":"p07","nombre":"Producto 07","precio":129,"categoria":"Maquillaje","descripcion":"Descripción corta del producto 07.","imagen":"img/productos/p07.jpg" },
-  { "id":"p08","nombre":"Producto 08","precio":219,"categoria":"Maquillaje","descripcion":"Descripción corta del producto 08.","imagen":"img/productos/p08.jpg" },
-  { "id":"p09","nombre":"Producto 09","precio":179,"categoria":"Maquillaje","descripcion":"Descripción corta del producto 09.","imagen":"img/productos/p09.jpg" },
-  { "id":"p10","nombre":"Producto 10","precio":149,"categoria":"Maquillaje","descripcion":"Descripción corta del producto 10.","imagen":"img/productos/p10.jpg" },
-
-  { "id":"p11","nombre":"Producto 11","precio":349,"categoria":"Perfumes","descripcion":"Descripción corta del producto 11.","imagen":"img/productos/p11.jpg" },
-  { "id":"p12","nombre":"Producto 12","precio":399,"categoria":"Perfumes","descripcion":"Descripción corta del producto 12.","imagen":"img/productos/p12.jpg" },
-  { "id":"p13","nombre":"Producto 13","precio":299,"categoria":"Perfumes","descripcion":"Descripción corta del producto 13.","imagen":"img/productos/p13.jpg" },
-  { "id":"p14","nombre":"Producto 14","precio":459,"categoria":"Perfumes","descripcion":"Descripción corta del producto 14.","imagen":"img/productos/p14.jpg" },
-  { "id":"p15","nombre":"Producto 15","precio":279,"categoria":"Perfumes","descripcion":"Descripción corta del producto 15.","imagen":"img/productos/p15.jpg" },
-
-  { "id":"p16","nombre":"Producto 16","precio":99,"categoria":"Cabello","descripcion":"Descripción corta del producto 16.","imagen":"img/productos/p16.jpg" },
-  { "id":"p17","nombre":"Producto 17","precio":139,"categoria":"Cabello","descripcion":"Descripción corta del producto 17.","imagen":"img/productos/p17.jpg" },
-  { "id":"p18","nombre":"Producto 18","precio":189,"categoria":"Cabello","descripcion":"Descripción corta del producto 18.","imagen":"img/productos/p18.jpg" },
-  { "id":"p19","nombre":"Producto 19","precio":229,"categoria":"Cabello","descripcion":"Descripción corta del producto 19.","imagen":"img/productos/p19.jpg" },
-  { "id":"p20","nombre":"Producto 20","precio":169,"categoria":"Cabello","descripcion":"Descripción corta del producto 20.","imagen":"img/productos/p20.jpg" },
-
-  { "id":"p21","nombre":"Producto 21","precio":79,"categoria":"Accesorios","descripcion":"Descripción corta del producto 21.","imagen":"img/productos/p21.jpg" },
-  { "id":"p22","nombre":"Producto 22","precio":89,"categoria":"Accesorios","descripcion":"Descripción corta del producto 22.","imagen":"img/productos/p22.jpg" },
-  { "id":"p23","nombre":"Producto 23","precio":119,"categoria":"Accesorios","descripcion":"Descripción corta del producto 23.","imagen":"img/productos/p23.jpg" },
-  { "id":"p24","nombre":"Producto 24","precio":149,"categoria":"Accesorios","descripcion":"Descripción corta del producto 24.","imagen":"img/productos/p24.jpg" },
-  { "id":"p25","nombre":"Producto 25","precio":109,"categoria":"Accesorios","descripcion":"Descripción corta del producto 25.","imagen":"img/productos/p25.jpg" },
-
-  { "id":"p26","nombre":"Producto 26","precio":199,"categoria":"Cuerpo","descripcion":"Descripción corta del producto 26.","imagen":"img/productos/p26.jpg" },
-  { "id":"p27","nombre":"Producto 27","precio":229,"categoria":"Cuerpo","descripcion":"Descripción corta del producto 27.","imagen":"img/productos/p27.jpg" },
-  { "id":"p28","nombre":"Producto 28","precio":259,"categoria":"Cuerpo","descripcion":"Descripción corta del producto 28.","imagen":"img/productos/p28.jpg" },
-  { "id":"p29","nombre":"Producto 29","precio":179,"categoria":"Cuerpo","descripcion":"Descripción corta del producto 29.","imagen":"img/productos/p29.jpg" },
-  { "id":"p30","nombre":"Producto 30","precio":149,"categoria":"Cuerpo","descripcion":"Descripción corta del producto 30.","imagen":"img/productos/p30.jpg" }
+  {
+    "id": "p01",
+    "nombre": "Crema Hidratante Corporal Manzana Caramelizada & Vainilla",
+    "precio": 190,
+    "categoria": "Cuerpo",
+    "descripcion": "Hidratación profunda con aroma dulce de manzana caramelizada y vainilla. Ideal para uso diario. Contenido 400 ml.",
+    "imagen": "img/productos/1.jpeg"
+  },
+  {
+    "id": "p02",
+    "nombre": "Body Splash Mora Roja & Jabuticaba",
+    "precio": 285,
+    "categoria": "Fragancias",
+    "descripcion": "Fragancia frutal y refrescante, perfecta para reaplicar durante el día.",
+    "imagen": "img/productos/2.jpeg"
+  },
+  {
+    "id": "p03",
+    "nombre": "Exfoliante Térmico Relajante",
+    "precio": 190,
+    "categoria": "Cuerpo",
+    "descripcion": "Exfolia suavemente mientras ayuda a relajar las tensiones diarias.",
+    "imagen": "img/productos/3.jpeg"
+  },
+  {
+    "id": "p04",
+    "nombre": "Gel Limpiador Facial Aroma Dulce",
+    "precio": 109,
+    "categoria": "Facial",
+    "descripcion": "Limpia delicadamente el rostro, dejando la piel fresca y suave.",
+    "imagen": "img/productos/4.jpeg"
+  },
+  {
+    "id": "p05",
+    "nombre": "Perfume Aromático Floral",
+    "precio": 490,
+    "categoria": "Perfumes",
+    "descripcion": "Fragancia elegante con notas cítricas, lavanda y peonía.",
+    "imagen": "img/productos/5.jpeg"
+  },
+  {
+    "id": "p06",
+    "nombre": "Aceite Trifásico Corporal Maracuyá",
+    "precio": 299,
+    "categoria": "Cuerpo",
+    "descripcion": "Hidrata, perfuma y protege la piel, ayudando a combatir el estrés cutáneo.",
+    "imagen": "img/productos/6.jpeg"
+  },
+  {
+    "id": "p07",
+    "nombre": "Jabón Líquido Corporal",
+    "precio": 190,
+    "categoria": "Cuerpo",
+    "descripcion": "Limpieza diaria con alta explosión de fragancia y sensación refrescante.",
+    "imagen": "img/productos/7.jpeg"
+  },
+  {
+    "id": "p08",
+    "nombre": "Crema Exfoliante Corporal",
+    "precio": 80,
+    "categoria": "Cuerpo",
+    "descripcion": "Deja la piel con apariencia suave, fresca y tonificada.",
+    "imagen": "img/productos/8.jpeg"
+  },
+  {
+    "id": "p09",
+    "nombre": "Gel de Limpieza Profunda Facial",
+    "precio": 80,
+    "categoria": "Facial",
+    "descripcion": "Limpia profundamente la piel dejándola suave, fresca y tonificada.",
+    "imagen": "img/productos/9.jpeg"
+  },
+  {
+    "id": "p10",
+    "nombre": "Desodorante Humor Liberta",
+    "precio": 105,
+    "categoria": "Higiene personal",
+    "descripcion": "Fragancia juvenil y fresca ideal para uso diario.",
+    "imagen": "img/productos/10.jpeg"
+  },
+  {
+    "id": "p11",
+    "nombre": "Crema Exfoliante Facial Vitamina C",
+    "precio": 130,
+    "categoria": "Facial",
+    "descripcion": "Exfoliante antioxidante que ayuda a revitalizar la piel.",
+    "imagen": "img/productos/11.jpeg"
+  },
+  {
+    "id": "p12",
+    "nombre": "Crema para Manos Ciruela & Flor de Vainilla",
+    "precio": 85,
+    "categoria": "Manos",
+    "descripcion": "Nutre con probióticos, manteca de cacao y aceite de linaza.",
+    "imagen": "img/productos/12.jpeg"
+  },
+  {
+    "id": "p13",
+    "nombre": "Pulpa Hidratante para Manos Castaña",
+    "precio": 130,
+    "categoria": "Manos",
+    "descripcion": "Nutre la piel, uñas y cutículas. Ideal para manos secas.",
+    "imagen": "img/productos/13.jpeg"
+  },
+  {
+    "id": "p14",
+    "nombre": "Pulpa Hidratante para Manos Tukuma",
+    "precio": 130,
+    "categoria": "Manos",
+    "descripcion": "Ayuda a prevenir signos de envejecimiento prematuro.",
+    "imagen": "img/productos/14.jpeg"
+  },
+  {
+    "id": "p15",
+    "nombre": "Lápiz Retráctil para Ojos Negro",
+    "precio": 250,
+    "categoria": "Maquillaje",
+    "descripcion": "Delineado intenso y preciso con textura suave.",
+    "imagen": "img/productos/15.jpeg"
+  },
+  {
+    "id": "p16",
+    "nombre": "Primer Blur Piel Mixta",
+    "precio": 220,
+    "categoria": "Maquillaje",
+    "descripcion": "Difumina poros y prolonga la duración del maquillaje.",
+    "imagen": "img/productos/16.jpeg"
+  },
+  {
+    "id": "p17",
+    "nombre": "Perfume Kaiak Clásico",
+    "precio": 199,
+    "categoria": "Perfumes",
+    "descripcion": "Fragancia cítrico floral fresca y masculina.",
+    "imagen": "img/productos/17.jpeg"
+  },
+  {
+    "id": "p18",
+    "nombre": "Labial Bissú Humectante",
+    "precio": 39,
+    "categoria": "Maquillaje",
+    "descripcion": "Color intenso con fórmula hidratante para uso diario.",
+    "imagen": "img/productos/18.jpeg"
+  },
+  {
+    "id": "p19",
+    "nombre": "Labial Ultra Mate Aroma Moka",
+    "precio": 115,
+    "categoria": "Maquillaje",
+    "descripcion": "Acabado ultra mate con hidratación y aceite de aguacate.",
+    "imagen": "img/productos/19.jpeg"
+  },
+  {
+    "id": "p20",
+    "nombre": "Desodorante Caballero Antimanchas",
+    "precio": 109,
+    "categoria": "Higiene personal",
+    "descripcion": "Complejo hidratante con vitamina C y protección hasta 72 horas.",
+    "imagen": "img/productos/20.jpeg"
+  }
 ]
