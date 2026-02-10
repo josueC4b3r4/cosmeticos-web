@@ -1,5 +1,5 @@
 // 1) Configura aquí tu WhatsApp (México: 52, y normalmente 521 + tu número)
-const WHATSAPP_NUMBER = "+52 55 7464 2090"; 
+const WHATSAPP_NUMBER = "5574642090"; 
 
 const grid = document.getElementById("grid");
 const searchInput = document.getElementById("search");
