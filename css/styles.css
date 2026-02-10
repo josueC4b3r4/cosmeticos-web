@@ -316,3 +316,40 @@ a{ color: inherit; }
     align-items: flex-start;
   }
 }
+
+/* ===== AGOTADO ===== */
+.badge-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.soldout{
+  width: max-content;
+  font-size: 12px;
+  font-weight: 1000;
+  letter-spacing: .8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.12);
+  color: rgba(0,0,0,0.70);
+}
+
+/* Botón deshabilitado */
+.btn-disabled{
+  background: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.10);
+  color: rgba(0,0,0,0.45);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* (Opcional) que se vea ligeramente “apagada” la tarjeta agotada */
+.card-soldout{
+  opacity: 0.92;
+}
+.card-soldout img{
+  filter: grayscale(0.2) contrast(0.95);
+}

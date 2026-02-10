@@ -6,7 +6,8 @@
     "precio": 190,
     "categoria": "Cuerpo",
     "descripcion": "Hidratación profunda con aroma dulce de manzana caramelizada y vainilla. Ideal para uso diario. Contenido 400 ml.",
-    "imagen": "img/productos/1.jpeg"
+    "imagen": "img/productos/1.jpeg",
+    "agotado": false
   },
   {
     "id": "p02",
@@ -15,7 +16,8 @@
     "precio": 285,
     "categoria": "Fragancias",
     "descripcion": "Fragancia frutal y refrescante, perfecta para reaplicar durante el día.",
-    "imagen": "img/productos/2.jpeg"
+    "imagen": "img/productos/2.jpeg",
+    "agotado": false
   },
   {
     "id": "p03",
@@ -24,7 +26,8 @@
     "precio": 190,
     "categoria": "Cuerpo",
     "descripcion": "Exfolia suavemente mientras ayuda a relajar las tensiones diarias.",
-    "imagen": "img/productos/3.jpeg"
+    "imagen": "img/productos/3.jpeg",
+    "agotado": false
   },
   {
     "id": "p04",
@@ -33,7 +36,8 @@
     "precio": 109,
     "categoria": "Facial",
     "descripcion": "Limpia delicadamente el rostro, dejando la piel fresca y suave.",
-    "imagen": "img/productos/4.jpeg"
+    "imagen": "img/productos/4.jpeg",
+    "agotado": false
   },
   {
     "id": "p05",
@@ -42,7 +46,8 @@
     "precio": 490,
     "categoria": "Perfumes",
     "descripcion": "Fragancia elegante con notas cítricas, lavanda y peonía.",
-    "imagen": "img/productos/5.jpeg"
+    "imagen": "img/productos/5.jpeg",
+    "agotado": false
   },
   {
     "id": "p06",
@@ -51,7 +56,8 @@
     "precio": 299,
     "categoria": "Cuerpo",
     "descripcion": "Hidrata, perfuma y protege la piel, ayudando a combatir el estrés cutáneo.",
-    "imagen": "img/productos/6.jpeg"
+    "imagen": "img/productos/6.jpeg",
+    "agotado": false
   },
   {
     "id": "p07",
@@ -60,7 +66,8 @@
     "precio": 190,
     "categoria": "Cuerpo",
     "descripcion": "Limpieza diaria con alta explosión de fragancia y sensación refrescante.",
-    "imagen": "img/productos/7.jpeg"
+    "imagen": "img/productos/7.jpeg",
+    "agotado": false
   },
   {
     "id": "p08",
@@ -69,7 +76,8 @@
     "precio": 80,
     "categoria": "Cuerpo",
     "descripcion": "Deja la piel con apariencia suave, fresca y tonificada.",
-    "imagen": "img/productos/8.jpeg"
+    "imagen": "img/productos/8.jpeg",
+    "agotado": false
   },
   {
     "id": "p09",
@@ -78,7 +86,8 @@
     "precio": 80,
     "categoria": "Facial",
     "descripcion": "Limpia profundamente la piel dejándola suave, fresca y tonificada.",
-    "imagen": "img/productos/9.jpeg"
+    "imagen": "img/productos/9.jpeg",
+    "agotado": false
   },
   {
     "id": "p10",
@@ -86,7 +95,8 @@
     "precio": 105,
     "categoria": "Higiene personal",
     "descripcion": "Fragancia juvenil y fresca ideal para uso diario.",
-    "imagen": "img/productos/10.jpeg"
+    "imagen": "img/productos/10.jpeg",
+    "agotado": false
   },
   {
     "id": "p11",
@@ -95,7 +105,8 @@
     "precio": 130,
     "categoria": "Facial",
     "descripcion": "Exfoliante antioxidante que ayuda a revitalizar la piel.",
-    "imagen": "img/productos/11.jpeg"
+    "imagen": "img/productos/11.jpeg",
+    "agotado": false
   },
   {
     "id": "p12",
@@ -104,7 +115,8 @@
     "precio": 85,
     "categoria": "Manos",
     "descripcion": "Nutre con probióticos, manteca de cacao y aceite de linaza.",
-    "imagen": "img/productos/12.jpeg"
+    "imagen": "img/productos/12.jpeg",
+    "agotado": false
   },
   {
     "id": "p13",
@@ -113,7 +125,8 @@
     "precio": 130,
     "categoria": "Manos",
     "descripcion": "Nutre la piel, uñas y cutículas. Ideal para manos secas.",
-    "imagen": "img/productos/13.jpeg"
+    "imagen": "img/productos/13.jpeg",
+    "agotado": false
   },
   {
     "id": "p14",
@@ -122,7 +135,8 @@
     "precio": 130,
     "categoria": "Manos",
     "descripcion": "Ayuda a prevenir signos de envejecimiento prematuro.",
-    "imagen": "img/productos/14.jpeg"
+    "imagen": "img/productos/14.jpeg",
+    "agotado": false
   },
   {
     "id": "p15",
@@ -131,7 +145,8 @@
     "precio": 250,
     "categoria": "Maquillaje",
     "descripcion": "Delineado intenso y preciso con textura suave.",
-    "imagen": "img/productos/15.jpeg"
+    "imagen": "img/productos/15.jpeg",
+    "agotado": false
   },
   {
     "id": "p16",
@@ -140,7 +155,8 @@
     "precio": 220,
     "categoria": "Maquillaje",
     "descripcion": "Difumina poros y prolonga la duración del maquillaje.",
-    "imagen": "img/productos/16.jpeg"
+    "imagen": "img/productos/16.jpeg",
+    "agotado": false
   },
   {
     "id": "p17",
@@ -149,7 +165,8 @@
     "precio": 199,
     "categoria": "Perfumes",
     "descripcion": "Fragancia cítrico floral fresca y masculina.",
-    "imagen": "img/productos/17.jpeg"
+    "imagen": "img/productos/17.jpeg",
+    "agotado": false
   },
   {
     "id": "p18",
@@ -157,7 +174,8 @@
     "precio": 39,
     "categoria": "Maquillaje",
     "descripcion": "Color intenso con fórmula hidratante para uso diario.",
-    "imagen": "img/productos/18.jpeg"
+    "imagen": "img/productos/18.jpeg",
+    "agotado": false
   },
   {
     "id": "p19",
@@ -166,7 +184,8 @@
     "precio": 115,
     "categoria": "Maquillaje",
     "descripcion": "Acabado ultra mate con hidratación y aceite de aguacate.",
-    "imagen": "img/productos/19.jpeg"
+    "imagen": "img/productos/19.jpeg",
+    "agotado": false
   },
   {
     "id": "p20",
@@ -175,6 +194,7 @@
     "precio": 109,
     "categoria": "Higiene personal",
     "descripcion": "Complejo hidratante con vitamina C y protección hasta 72 horas.",
-    "imagen": "img/productos/20.jpeg"
+    "imagen": "img/productos/20.jpeg",
+    "agotado": false
   }
 ]

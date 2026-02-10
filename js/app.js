@@ -1,5 +1,5 @@
 // 1) Configura aquí tu WhatsApp (México: 52, y normalmente 521 + tu número)
-const WHATSAPP_NUMBER = "5215574642090";
+const WHATSAPP_NUMBER = "5215574642090"; // ya con tu número
 
 const grid = document.getElementById("grid");
 const searchInput = document.getElementById("search");
@@ -12,16 +12,13 @@ function moneyMXN(n) {
 }
 
 function buildProductUrl(p) {
-  // Por ahora, usamos el home. Después si quieres, hacemos página por producto.
   return window.location.href.split("#")[0];
 }
 
 function formatPriceLine(p) {
-  // Si hay precio original, mostramos "Antes" y "Ahora"
   if (typeof p.precio_original === "number" && p.precio_original > p.precio) {
     return `Antes: ${moneyMXN(p.precio_original)} | Ahora: ${moneyMXN(p.precio)}`;
   }
-  // Si no, solo precio normal
   return `${moneyMXN(p.precio)}`;
 }
 
@@ -51,6 +48,8 @@ function render(list) {
       typeof p.precio === "number" &&
       p.precio_original > p.precio;
 
+    const isAgotado = p.agotado === true; // ✅ NUEVO
+
     const priceHtml = hasDiscount
       ? `
         <div class="price-row">
@@ -60,30 +59,43 @@ function render(list) {
       `
       : `<div class="price">${moneyMXN(p.precio)}</div>`;
 
+    const soldOutBadge = isAgotado ? `<span class="soldout">AGOTADO</span>` : ``;
+
+    const pedirBtn = isAgotado
+      ? `<span class="btn btn-disabled" title="Producto agotado">Agotado</span>`
+      : `<a class="btn btn-wa" target="_blank" rel="noopener"
+            href="${waLinkToMyNumber(p, urlProducto)}">Pedir por WhatsApp</a>`;
+
     const card = document.createElement("article");
-    card.className = "card";
+    card.className = `card ${isAgotado ? "card-soldout" : ""}`;
     card.innerHTML = `
       <img src="${p.imagen}" alt="${p.nombre}">
       <div class="content">
-        <span class="badge">${p.categoria}</span>
+        <div class="badge-row">
+          <span class="badge">${p.categoria}</span>
+          ${soldOutBadge}
+        </div>
+
         <h3 style="margin:0;">${p.nombre}</h3>
         <p style="margin:0; color:#444;">${p.descripcion}</p>
         ${priceHtml}
       </div>
+
       <div class="actions">
-        <a class="btn btn-wa" target="_blank" rel="noopener"
-           href="${waLinkToMyNumber(p, urlProducto)}">Pedir por WhatsApp</a>
+        ${pedirBtn}
         <a class="btn btn-share" target="_blank" rel="noopener"
            href="${waShareLink(p, urlProducto)}">Compartir</a>
       </div>
     `;
+
     grid.appendChild(card);
   }
 }
 
 function fillCategories(items) {
   const cats = Array.from(new Set(items.map(p => p.categoria))).sort();
-  categorySelect.innerHTML = `<option value="all">Todas las categorías</option>` +
+  categorySelect.innerHTML =
+    `<option value="all">Todas las categorías</option>` +
     cats.map(c => `<option value="${c}">${c}</option>`).join("");
 }
 
