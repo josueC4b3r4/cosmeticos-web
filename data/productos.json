@@ -2,6 +2,7 @@
   {
     "id": "p01",
     "nombre": "Crema Hidratante Corporal Manzana Caramelizada & Vainilla",
+    "precio_original": 269,
     "precio": 190,
     "categoria": "Cuerpo",
     "descripcion": "Hidratación profunda con aroma dulce de manzana caramelizada y vainilla. Ideal para uso diario. Contenido 400 ml.",
@@ -10,6 +11,7 @@
   {
     "id": "p02",
     "nombre": "Body Splash Mora Roja & Jabuticaba",
+    "precio_original": 390,
     "precio": 285,
     "categoria": "Fragancias",
     "descripcion": "Fragancia frutal y refrescante, perfecta para reaplicar durante el día.",
@@ -18,6 +20,7 @@
   {
     "id": "p03",
     "nombre": "Exfoliante Térmico Relajante",
+    "precio_original": 295,
     "precio": 190,
     "categoria": "Cuerpo",
     "descripcion": "Exfolia suavemente mientras ayuda a relajar las tensiones diarias.",
@@ -26,6 +29,7 @@
   {
     "id": "p04",
     "nombre": "Gel Limpiador Facial Aroma Dulce",
+    "precio_original": 138,
     "precio": 109,
     "categoria": "Facial",
     "descripcion": "Limpia delicadamente el rostro, dejando la piel fresca y suave.",
@@ -34,6 +38,7 @@
   {
     "id": "p05",
     "nombre": "Perfume Aromático Floral",
+    "precio_original": 765,
     "precio": 490,
     "categoria": "Perfumes",
     "descripcion": "Fragancia elegante con notas cítricas, lavanda y peonía.",
@@ -42,6 +47,7 @@
   {
     "id": "p06",
     "nombre": "Aceite Trifásico Corporal Maracuyá",
+    "precio_original": 399,
     "precio": 299,
     "categoria": "Cuerpo",
     "descripcion": "Hidrata, perfuma y protege la piel, ayudando a combatir el estrés cutáneo.",
@@ -50,6 +56,7 @@
   {
     "id": "p07",
     "nombre": "Jabón Líquido Corporal",
+    "precio_original": 275,
     "precio": 190,
     "categoria": "Cuerpo",
     "descripcion": "Limpieza diaria con alta explosión de fragancia y sensación refrescante.",
@@ -58,6 +65,7 @@
   {
     "id": "p08",
     "nombre": "Crema Exfoliante Corporal",
+    "precio_original": 142,
     "precio": 80,
     "categoria": "Cuerpo",
     "descripcion": "Deja la piel con apariencia suave, fresca y tonificada.",
@@ -66,6 +74,7 @@
   {
     "id": "p09",
     "nombre": "Gel de Limpieza Profunda Facial",
+    "precio_original": 142,
     "precio": 80,
     "categoria": "Facial",
     "descripcion": "Limpia profundamente la piel dejándola suave, fresca y tonificada.",
@@ -82,6 +91,7 @@
   {
     "id": "p11",
     "nombre": "Crema Exfoliante Facial Vitamina C",
+    "precio_original": 160,
     "precio": 130,
     "categoria": "Facial",
     "descripcion": "Exfoliante antioxidante que ayuda a revitalizar la piel.",
@@ -90,6 +100,7 @@
   {
     "id": "p12",
     "nombre": "Crema para Manos Ciruela & Flor de Vainilla",
+    "precio_original": 139,
     "precio": 85,
     "categoria": "Manos",
     "descripcion": "Nutre con probióticos, manteca de cacao y aceite de linaza.",
@@ -98,6 +109,7 @@
   {
     "id": "p13",
     "nombre": "Pulpa Hidratante para Manos Castaña",
+    "precio_original": 209,
     "precio": 130,
     "categoria": "Manos",
     "descripcion": "Nutre la piel, uñas y cutículas. Ideal para manos secas.",
@@ -106,6 +118,7 @@
   {
     "id": "p14",
     "nombre": "Pulpa Hidratante para Manos Tukuma",
+    "precio_original": 209,
     "precio": 130,
     "categoria": "Manos",
     "descripcion": "Ayuda a prevenir signos de envejecimiento prematuro.",
@@ -114,6 +127,7 @@
   {
     "id": "p15",
     "nombre": "Lápiz Retráctil para Ojos Negro",
+    "precio_original": 370,
     "precio": 250,
     "categoria": "Maquillaje",
     "descripcion": "Delineado intenso y preciso con textura suave.",
@@ -122,6 +136,7 @@
   {
     "id": "p16",
     "nombre": "Primer Blur Piel Mixta",
+    "precio_original": 409,
     "precio": 220,
     "categoria": "Maquillaje",
     "descripcion": "Difumina poros y prolonga la duración del maquillaje.",
@@ -130,6 +145,7 @@
   {
     "id": "p17",
     "nombre": "Perfume Kaiak Clásico",
+    "precio_original": 299,
     "precio": 199,
     "categoria": "Perfumes",
     "descripcion": "Fragancia cítrico floral fresca y masculina.",
@@ -146,6 +162,7 @@
   {
     "id": "p19",
     "nombre": "Labial Ultra Mate Aroma Moka",
+    "precio_original": 193,
     "precio": 115,
     "categoria": "Maquillaje",
     "descripcion": "Acabado ultra mate con hidratación y aceite de aguacate.",
@@ -154,6 +171,7 @@
   {
     "id": "p20",
     "nombre": "Desodorante Caballero Antimanchas",
+    "precio_original": 143,
     "precio": 109,
     "categoria": "Higiene personal",
     "descripcion": "Complejo hidratante con vitamina C y protección hasta 72 horas.",

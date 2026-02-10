@@ -1,5 +1,5 @@
 // 1) Configura aquí tu WhatsApp (México: 52, y normalmente 521 + tu número)
-const WHATSAPP_NUMBER = "521XXXXXXXXXX"; // <-- cámbialo
+const WHATSAPP_NUMBER = "+52 55 7464 2090"; 
 
 const grid = document.getElementById("grid");
 const searchInput = document.getElementById("search");
@@ -16,13 +16,22 @@ function buildProductUrl(p) {
   return window.location.href.split("#")[0];
 }
 
+function formatPriceLine(p) {
+  // Si hay precio original, mostramos "Antes" y "Ahora"
+  if (typeof p.precio_original === "number" && p.precio_original > p.precio) {
+    return `Antes: ${moneyMXN(p.precio_original)} | Ahora: ${moneyMXN(p.precio)}`;
+  }
+  // Si no, solo precio normal
+  return `${moneyMXN(p.precio)}`;
+}
+
 function waLinkToMyNumber(p, urlProducto) {
-  const msg = `Hola, me interesa: ${p.nombre} (${moneyMXN(p.precio)}). ${urlProducto}`;
+  const msg = `Hola, me interesa: ${p.nombre}. ${formatPriceLine(p)}. ${urlProducto}`;
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
 }
 
 function waShareLink(p, urlProducto) {
-  const msg = `Mira este producto: ${p.nombre} (${moneyMXN(p.precio)}). ${urlProducto}`;
+  const msg = `Mira este producto: ${p.nombre}. ${formatPriceLine(p)}. ${urlProducto}`;
   return `https://wa.me/?text=${encodeURIComponent(msg)}`;
 }
 
@@ -37,6 +46,20 @@ function render(list) {
   for (const p of list) {
     const urlProducto = buildProductUrl(p);
 
+    const hasDiscount =
+      typeof p.precio_original === "number" &&
+      typeof p.precio === "number" &&
+      p.precio_original > p.precio;
+
+    const priceHtml = hasDiscount
+      ? `
+        <div class="price-row">
+          <span class="price-original">${moneyMXN(p.precio_original)}</span>
+          <span class="price-offer">${moneyMXN(p.precio)}</span>
+        </div>
+      `
+      : `<div class="price">${moneyMXN(p.precio)}</div>`;
+
     const card = document.createElement("article");
     card.className = "card";
     card.innerHTML = `
@@ -45,7 +68,7 @@ function render(list) {
         <span class="badge">${p.categoria}</span>
         <h3 style="margin:0;">${p.nombre}</h3>
         <p style="margin:0; color:#444;">${p.descripcion}</p>
-        <div class="price">${moneyMXN(p.precio)}</div>
+        ${priceHtml}
       </div>
       <div class="actions">
         <a class="btn btn-wa" target="_blank" rel="noopener"
