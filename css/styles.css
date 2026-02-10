@@ -1,16 +1,21 @@
 :root{
-  --bg: #fbf8fb;
+  /* Fondo y superficies */
+  --bg: #fff7fb;              /* blanco con toque rosa */
   --card: #ffffff;
   --text: #1b1b1f;
-  --muted: #5b5b63;
+  --muted: #6b6470;
 
-  --primary: #c84d8b;     /* rosa principal */
-  --primary-2: #7b2cbf;   /* morado acento */
-  --border: rgba(0,0,0,0.08);
+  /* Paleta principal (rosas + morados) */
+  --primary: #ff4fa3;         /* rosa fuerte */
+  --primary-2: #7c3aed;       /* morado */
+  --primary-soft: rgba(255,79,163,0.14);
+  --purple-soft: rgba(124,58,237,0.12);
+
+  --border: rgba(20, 10, 25, 0.10);
 
   --wa: #25D366;
-  --shadow: 0 14px 40px rgba(0,0,0,0.08);
-  --radius: 18px;
+  --shadow: 0 16px 42px rgba(20, 10, 25, 0.10);
+  --radius: 20px;
 }
 
 *{ box-sizing:border-box; }
@@ -20,8 +25,9 @@ body{
   margin:0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background:
-    radial-gradient(1200px 700px at 10% 0%, rgba(200,77,139,0.10), transparent 60%),
-    radial-gradient(900px 600px at 90% 10%, rgba(123,44,191,0.10), transparent 55%),
+    radial-gradient(1200px 700px at 12% 0%, rgba(255,79,163,0.18), transparent 60%),
+    radial-gradient(900px 600px at 92% 10%, rgba(124,58,237,0.16), transparent 55%),
+    radial-gradient(700px 500px at 50% 100%, rgba(255,79,163,0.10), transparent 60%),
     var(--bg);
   color:var(--text);
 }
@@ -34,8 +40,8 @@ a{ color: inherit; }
   position: sticky;
   top: 0;
   z-index: 10;
-  backdrop-filter: blur(10px);
-  background: rgba(251,248,251,0.75);
+  backdrop-filter: blur(12px);
+  background: rgba(255, 247, 251, 0.82);
   border-bottom: 1px solid var(--border);
 }
 
@@ -54,18 +60,23 @@ a{ color: inherit; }
   flex-direction:column;
   gap: 4px;
 }
+
 .brand h1{
   margin: 0;
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  color: var(--primary);
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
+  background: linear-gradient(135deg, #ff4fa3, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 .brand p{
   margin:0;
-  color: var(--muted);
   font-size: 13px;
+  color: #8a0de2;
+  letter-spacing: 0.5px;
 }
 
 .controls{
@@ -79,13 +90,14 @@ a{ color: inherit; }
   padding:10px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.92);
   outline: none;
   min-width: 240px;
 }
+
 .input:focus, .select:focus{
-  border-color: rgba(200,77,139,0.55);
-  box-shadow: 0 0 0 4px rgba(200,77,139,0.12);
+  border-color: rgba(255,79,163,0.55);
+  box-shadow: 0 0 0 5px rgba(255,79,163,0.16);
 }
 
 /* ================= LAYOUT ================= */
@@ -102,10 +114,10 @@ a{ color: inherit; }
   justify-content:space-between;
   gap: 18px;
   padding: 18px;
-  background: linear-gradient(135deg, rgba(200,77,139,0.12), rgba(123,44,191,0.10));
+  background: linear-gradient(135deg, rgba(255,79,163,0.16), rgba(124,58,237,0.14));
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  box-shadow: 0 10px 28px rgba(0,0,0,0.05);
+  box-shadow: 0 12px 30px rgba(20, 10, 25, 0.08);
   margin-bottom: 18px;
 }
 
@@ -124,8 +136,9 @@ a{ color: inherit; }
   padding: 10px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: rgba(255,255,255,0.8);
-  font-weight: 700;
+  background: rgba(255,255,255,0.86);
+  font-weight: 900;
+  color: #3b1b3b;
 }
 
 /* ================= GRID ================= */
@@ -140,7 +153,7 @@ a{ color: inherit; }
 
 .card{
   background: var(--card);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(20, 10, 25, 0.10);
   border-radius: var(--radius);
   overflow:hidden;
   box-shadow: var(--shadow);
@@ -148,18 +161,19 @@ a{ color: inherit; }
   flex-direction:column;
   transition: transform .18s ease, box-shadow .18s ease;
 }
+
 .card:hover{
   transform: translateY(-4px);
-  box-shadow: 0 18px 55px rgba(0,0,0,0.10);
+  box-shadow: 0 22px 60px rgba(20, 10, 25, 0.14);
 }
 
-/* 🔥 AQUÍ ESTÁ EL CAMBIO IMPORTANTE 🔥 */
+/* Imagen completa */
 .card img{
   width: 100%;
-  height: 280px;           /* más altura para que se aprecie mejor */
-  object-fit: contain;     /* muestra la imagen completa */
+  height: 290px;
+  object-fit: contain;
   object-position: center;
-  background: #f1f1f1;     /* fondo cuando sobra espacio */
+  background: linear-gradient(180deg, rgba(255,79,163,0.08), rgba(124,58,237,0.06));
 }
 
 /* ================= CONTENT ================= */
@@ -174,13 +188,13 @@ a{ color: inherit; }
 .badge{
   width: max-content;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: .2px;
   padding: 6px 10px;
   border-radius: 999px;
-  background: rgba(200,77,139,0.10);
-  border: 1px solid rgba(200,77,139,0.18);
-  color: #7a2450;
+  background: rgba(255,79,163,0.12);
+  border: 1px solid rgba(255,79,163,0.22);
+  color: #8a1f5a;
 }
 
 .title{
@@ -188,29 +202,48 @@ a{ color: inherit; }
   font-size: 16px;
   line-height: 1.2;
 }
+
 .desc{
   margin:0;
-  color: var(--muted);
+  color: #504a56;
   font-size: 13px;
   line-height: 1.35;
   min-height: 36px;
 }
 
-.meta{
+/* Precio */
+.price-row{
   display:flex;
-  align-items:center;
-  justify-content:space-between;
+  align-items:baseline;
   gap:10px;
-  margin-top: 4px;
+  margin-top: 6px;
 }
+
+.price-original{
+  color: #8f8896;
+  text-decoration: line-through;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.price-offer{
+  color: var(--primary-2);
+  font-weight: 1000;
+  font-size: 16px;
+}
+
 .price{
-  font-weight: 900;
+  font-weight: 1000;
   font-size: 15px;
+  margin-top: 6px;
+  color: var(--primary-2);
 }
+
+/* (si aún usas idtag en algún momento, lo dejamos bonito) */
 .idtag{
   font-size: 12px;
   color: var(--muted);
-  border: 1px dashed var(--border);
+  border: 1px dashed rgba(20, 10, 25, 0.16);
   border-radius: 999px;
   padding: 6px 10px;
 }
@@ -230,24 +263,28 @@ a{ color: inherit; }
   padding: 11px 12px;
   border-radius: 14px;
   text-decoration:none;
-  font-weight: 900;
-  border: 1px solid var(--border);
+  font-weight: 1000;
+  border: 1px solid rgba(20, 10, 25, 0.10);
   transition: transform .15s ease, filter .15s ease;
   user-select: none;
 }
+
 .btn:hover{
   transform: translateY(-1px);
   filter: brightness(0.98);
 }
 
+/* WhatsApp */
 .btn-wa{
   background: var(--wa);
   border-color: var(--wa);
   color:#fff;
 }
+
+/* Compartir: morado bonito */
 .btn-share{
-  background: #111;
-  border-color:#111;
+  background: linear-gradient(135deg, var(--primary-2), var(--primary));
+  border-color: transparent;
   color:#fff;
 }
 
@@ -278,30 +315,4 @@ a{ color: inherit; }
     flex-direction: column;
     align-items: flex-start;
   }
-}
-
-.price-row{
-  display:flex;
-  align-items:baseline;
-  gap:10px;
-  margin-top: 6px;
-}
-
-.price-original{
-  color: #888;
-  text-decoration: line-through;
-  font-weight: 700;
-  font-size: 13px;
-}
-
-.price-offer{
-  color: var(--primary);
-  font-weight: 900;
-  font-size: 16px;
-}
-
-.price{
-  font-weight: 900;
-  font-size: 15px;
-  margin-top: 6px;
 }
