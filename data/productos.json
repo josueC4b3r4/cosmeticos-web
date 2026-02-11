@@ -6,7 +6,7 @@
     "precio": 190,
     "categoria": "Cuerpo",
     "descripcion": "Hidratación profunda con aroma dulce de manzana caramelizada y vainilla. Ideal para uso diario. Contenido 400 ml.",
-    "imagen": "img/productos/1.jpeg",
+    "imagen": "img/productos/1.png",
     "agotado": false
   },
   {
@@ -16,7 +16,7 @@
     "precio": 285,
     "categoria": "Fragancias",
     "descripcion": "Fragancia frutal y refrescante, perfecta para reaplicar durante el día.",
-    "imagen": "img/productos/2.jpeg",
+    "imagen": "img/productos/2.png",
     "agotado": false
   },
   {
@@ -26,7 +26,7 @@
     "precio": 190,
     "categoria": "Cuerpo",
     "descripcion": "Exfolia suavemente mientras ayuda a relajar las tensiones diarias.",
-    "imagen": "img/productos/3.jpeg",
+    "imagen": "img/productos/3.png",
     "agotado": false
   },
   {
@@ -36,7 +36,7 @@
     "precio": 109,
     "categoria": "Facial",
     "descripcion": "Limpia delicadamente el rostro, dejando la piel fresca y suave.",
-    "imagen": "img/productos/4.jpeg",
+    "imagen": "img/productos/4.png",
     "agotado": false
   },
   {
@@ -46,7 +46,7 @@
     "precio": 490,
     "categoria": "Perfumes",
     "descripcion": "Fragancia elegante con notas cítricas, lavanda y peonía.",
-    "imagen": "img/productos/5.jpeg",
+    "imagen": "img/productos/5.png",
     "agotado": false
   },
   {
@@ -56,7 +56,7 @@
     "precio": 299,
     "categoria": "Cuerpo",
     "descripcion": "Hidrata, perfuma y protege la piel, ayudando a combatir el estrés cutáneo.",
-    "imagen": "img/productos/6.jpeg",
+    "imagen": "img/productos/6.png",
     "agotado": false
   },
   {
@@ -66,7 +66,7 @@
     "precio": 190,
     "categoria": "Cuerpo",
     "descripcion": "Limpieza diaria con alta explosión de fragancia y sensación refrescante.",
-    "imagen": "img/productos/7.jpeg",
+    "imagen": "img/productos/7.png",
     "agotado": false
   },
   {
@@ -76,7 +76,7 @@
     "precio": 80,
     "categoria": "Cuerpo",
     "descripcion": "Deja la piel con apariencia suave, fresca y tonificada.",
-    "imagen": "img/productos/8.jpeg",
+    "imagen": "img/productos/8.png",
     "agotado": false
   },
   {
@@ -86,7 +86,7 @@
     "precio": 80,
     "categoria": "Facial",
     "descripcion": "Limpia profundamente la piel dejándola suave, fresca y tonificada.",
-    "imagen": "img/productos/9.jpeg",
+    "imagen": "img/productos/9.png",
     "agotado": false
   },
   {
@@ -95,7 +95,7 @@
     "precio": 105,
     "categoria": "Higiene personal",
     "descripcion": "Fragancia juvenil y fresca ideal para uso diario.",
-    "imagen": "img/productos/10.jpeg",
+    "imagen": "img/productos/10.png",
     "agotado": false
   },
   {
