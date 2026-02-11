@@ -353,3 +353,33 @@ a{ color: inherit; }
 .card-soldout img{
   filter: grayscale(0.2) contrast(0.95);
 }
+
+@keyframes titleIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.brand h1{
+  animation: titleIn .7s ease-out both;
+}
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.card{
+  animation: cardIn .4s ease-out both;
+}
+
+.card img{
+  transition: transform .4s ease;
+}
+
+.card:hover img{
+  transform: scale(1.05);
+}
+
+.card:hover{
+  box-shadow: 0 22px 60px rgba(255,79,163,0.25);
+}
