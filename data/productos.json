@@ -105,7 +105,7 @@
     "precio": 130,
     "categoria": "Facial",
     "descripcion": "Exfoliante antioxidante que ayuda a revitalizar la piel.",
-    "imagen": "img/productos/11.jpeg",
+    "imagen": "img/productos/11.jpg",
     "agotado": false
   },
   {
@@ -115,7 +115,7 @@
     "precio": 85,
     "categoria": "Manos",
     "descripcion": "Nutre con probióticos, manteca de cacao y aceite de linaza.",
-    "imagen": "img/productos/12.jpeg",
+    "imagen": "img/productos/12.jpg",
     "agotado": false
   },
   {
@@ -125,7 +125,7 @@
     "precio": 130,
     "categoria": "Manos",
     "descripcion": "Nutre la piel, uñas y cutículas. Ideal para manos secas.",
-    "imagen": "img/productos/13.jpeg",
+    "imagen": "img/productos/13.jpg",
     "agotado": false
   },
   {
@@ -135,7 +135,7 @@
     "precio": 130,
     "categoria": "Manos",
     "descripcion": "Ayuda a prevenir signos de envejecimiento prematuro.",
-    "imagen": "img/productos/14.jpeg",
+    "imagen": "img/productos/14.jpg",
     "agotado": false
   },
   {
@@ -145,7 +145,7 @@
     "precio": 250,
     "categoria": "Maquillaje",
     "descripcion": "Delineado intenso y preciso con textura suave.",
-    "imagen": "img/productos/15.jpeg",
+    "imagen": "img/productos/15.jpg",
     "agotado": false
   },
   {
@@ -155,7 +155,7 @@
     "precio": 220,
     "categoria": "Maquillaje",
     "descripcion": "Difumina poros y prolonga la duración del maquillaje.",
-    "imagen": "img/productos/16.jpeg",
+    "imagen": "img/productos/16.jpg",
     "agotado": false
   },
   {
@@ -165,7 +165,7 @@
     "precio": 199,
     "categoria": "Perfumes",
     "descripcion": "Fragancia cítrico floral fresca y masculina.",
-    "imagen": "img/productos/17.jpeg",
+    "imagen": "img/productos/17.jpg",
     "agotado": false
   },
   {
@@ -174,7 +174,7 @@
     "precio": 39,
     "categoria": "Maquillaje",
     "descripcion": "Color intenso con fórmula hidratante para uso diario.",
-    "imagen": "img/productos/18.jpeg",
+    "imagen": "img/productos/18.jpg",
     "agotado": false
   },
   {
@@ -184,7 +184,7 @@
     "precio": 115,
     "categoria": "Maquillaje",
     "descripcion": "Acabado ultra mate con hidratación y aceite de aguacate.",
-    "imagen": "img/productos/19.jpeg",
+    "imagen": "img/productos/19.jpg",
     "agotado": false
   },
   {
@@ -194,7 +194,121 @@
     "precio": 109,
     "categoria": "Higiene personal",
     "descripcion": "Complejo hidratante con vitamina C y protección hasta 72 horas.",
-    "imagen": "img/productos/20.jpeg",
+    "imagen": "img/productos/20.jpg",
+    "agotado": false
+  }
+
+  ,
+  {
+    "id": "p21",
+    "nombre": "Hidratante Corporal Humor Próprio",
+    "precio_original": 250,
+    "precio": 120,
+    "categoria": "Cuerpo",
+    "descripcion": "Hidratante corporal con fragancia Humor Próprio. Ideal para uso diario.",
+    "imagen": "img/productos/21.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p22",
+    "nombre": "Protector Solar Facial Mate con Color Medium",
+    "precio": 179,
+    "categoria": "Facial",
+    "descripcion": "Protector solar facial con acabado mate y color medium. Con ácido hialurónico.",
+    "imagen": "img/productos/22.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p23",
+    "nombre": "Pulpa Exfoliante para Manos y Pies",
+    "precio_original": 209,
+    "precio": 127,
+    "categoria": "Manos",
+    "descripcion": "Exfolia y ayuda a restaurar la piel, dejándola nutrida y suave.",
+    "imagen": "img/productos/23.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p24",
+    "nombre": "Labial Cremoso",
+    "precio_original": 149,
+    "precio": 99,
+    "categoria": "Maquillaje",
+    "descripcion": "Labial cremoso con aplicación suave y acabado cómodo.",
+    "imagen": "img/productos/24.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p25",
+    "nombre": "Rubor Bissú",
+    "precio": 55,
+    "categoria": "Maquillaje",
+    "descripcion": "Rubor en tonos durazno, coral y salmón. Ideal para un look natural.",
+    "imagen": "img/productos/25.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p26",
+    "nombre": "Quinteto de Sombras Bissú",
+    "precio": 65,
+    "categoria": "Maquillaje",
+    "descripcion": "Quinteto de sombras para crear looks de día o noche.",
+    "imagen": "img/productos/26.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p27",
+    "nombre": "Kit de 10 Brochas para Maquillaje",
+    "precio": 75,
+    "categoria": "Accesorios",
+    "descripcion": "Set de 10 brochas para maquillaje. Prácticas para rostro y ojos.",
+    "imagen": "img/productos/27.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p28",
+    "nombre": "Máscara de Pestañas Prosa",
+    "precio": 40,
+    "categoria": "Maquillaje",
+    "descripcion": "Máscara de pestañas para realzar y definir la mirada.",
+    "imagen": "img/productos/28.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p29",
+    "nombre": "Polvo Compacto Italia Delux",
+    "precio": 65,
+    "categoria": "Maquillaje",
+    "descripcion": "Uso en seco: efecto polvo. Uso húmedo: efecto base maquillaje. Tonos disponibles: Natural Ivory y Natural Tan.",
+    "imagen": "img/productos/29.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p30",
+    "nombre": "Corrector / Contorno e Iluminador Italia Delux 2 en 1",
+    "precio": 50,
+    "categoria": "Maquillaje",
+    "descripcion": "Corrector 2 en 1 para contorno e iluminador.",
+    "imagen": "img/productos/30.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p31",
+    "nombre": "Pestañas Postizas",
+    "precio": 45,
+    "categoria": "Accesorios",
+    "descripcion": "Pestañas postizas cómodas y ligeras. Fáciles de aplicar.",
+    "imagen": "img/productos/31.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p32",
+    "nombre": "Gel Exfoliante Corporal con Aceite de Aguacate y Jalea Real",
+    "precio": 45,
+    "categoria": "Cuerpo",
+    "descripcion": "Gel exfoliante corporal con aceite de aguacate y jalea real. Deja la piel suave y renovada.",
+    "imagen": "img/productos/32.jpg",
     "agotado": false
   }
 ]
+
