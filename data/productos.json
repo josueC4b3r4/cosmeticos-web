@@ -164,7 +164,7 @@
     "precio_original": 299,
     "precio": 199,
     "categoria": "Perfumes",
-    "descripcion": "Fragancia cítrico floral fresca y masculina.",
+    "descripcion": "Fragancia cítrico floral fresca para damas.",
     "imagen": "img/productos/17.jpg",
     "agotado": false
   },
@@ -310,5 +310,115 @@
     "imagen": "img/productos/32.jpg",
     "agotado": false
   }
-]
 
+  ,
+  {
+    "id": "p33",
+    "nombre": "Pulpa Hidratante Corporal Castaña 200ml",
+    "precio_original": 229,
+    "precio": 185,
+    "categoria": "Cuerpo",
+    "descripcion": "Potente tratamiento biocosmético que combate los indicadores del estrés cutáneo.",
+    "imagen": "img/productos/33.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p34",
+    "nombre": "Crema de Manos (Glicerina y Aceite de Almendras)",
+    "precio": 37,
+    "categoria": "Manos",
+    "descripcion": "Crema de manos con glicerina y aceite de almendras para suavizar y nutrir.",
+    "imagen": "img/productos/34.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p35",
+    "nombre": "Mascarilla Facial Antioleosidad (4 sobres)",
+    "precio": 50,
+    "categoria": "Facial",
+    "descripcion": "Mascarilla facial antioleosidad. Incluye 4 sobres por paquete.",
+    "imagen": "img/productos/35.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p36",
+    "nombre": "Pinzas para Delinear Cejas",
+    "precio": 20,
+    "categoria": "Accesorios",
+    "descripcion": "Pinzas ideales para delinear y dar forma a tus cejas.",
+    "imagen": "img/productos/36.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p37",
+    "nombre": "Lápiz Dúo Retráctil para Cejas",
+    "precio": 32,
+    "categoria": "Maquillaje",
+    "descripcion": "Tonos: Café claro, Gris obscuro, Claro marrón, Marrón y Obscuro marrón.",
+    "imagen": "img/productos/37.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p38",
+    "nombre": "Corrector Facial 2 en 1",
+    "precio": 38,
+    "categoria": "Maquillaje",
+    "descripcion": "Corrector facial 2 en 1 para cobertura y acabado uniforme.",
+    "imagen": "img/productos/38.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p39",
+    "nombre": "Toallitas Limpiadoras (Té Verde y Rosas) 30 pzas",
+    "precio": 28,
+    "categoria": "Facial",
+    "descripcion": "30 toallitas limpiadoras con extracto de té verde y rosas.",
+    "imagen": "img/productos/39.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p40",
+    "nombre": "Protector Solar Corporal SPF 90 con Colágeno",
+    "precio": 55,
+    "categoria": "Cuerpo",
+    "descripcion": "Protector solar corporal SPF 90 con colágeno para ayudar a proteger la piel.",
+    "imagen": "img/productos/40.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p41",
+    "nombre": "Maquillaje Líquido Mineral (Camel Beige)",
+    "precio": 65,
+    "categoria": "Maquillaje",
+    "descripcion": "Maquillaje líquido mineral. Tono: Camel Beige.",
+    "imagen": "img/productos/41.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p42",
+    "nombre": "Bálsamo para Labios Sabor Fresa",
+    "precio": 18,
+    "categoria": "Maquillaje",
+    "descripcion": "Bálsamo hidratante para labios con sabor fresa.",
+    "imagen": "img/productos/42.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p43",
+    "nombre": "Aceite Natural (Coco, Almendras, Ricino y Glicerina)",
+    "precio": 26,
+    "categoria": "Cuerpo",
+    "descripcion": "Mezcla con aceite de coco, almendras, ricino y glicerina pura.",
+    "imagen": "img/productos/43.jpg",
+    "agotado": false
+  },
+  {
+    "id": "p44",
+    "nombre": "Cepillo para Cabello BAUSSE",
+    "precio": 38,
+    "categoria": "Accesorios",
+    "descripcion": "Cepillo para cabello BAUSSE. Ideal para uso diario.",
+    "imagen": "img/productos/44.jpg",
+    "agotado": false
+  }
+]
