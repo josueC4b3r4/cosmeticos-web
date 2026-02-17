@@ -7,7 +7,7 @@
     "categoria": "Cuerpo",
     "descripcion": "Hidratación profunda con aroma dulce de manzana caramelizada y vainilla. Ideal para uso diario. Contenido 400 ml.",
     "imagen": "img/productos/1.png",
-    "agotado": false
+    "agotado": true
   },
   {
     "id": "p02",
