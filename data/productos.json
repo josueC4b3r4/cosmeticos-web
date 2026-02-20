@@ -126,7 +126,7 @@
     "categoria": "Manos",
     "descripcion": "Nutre la piel, uñas y cutículas. Ideal para manos secas.",
     "imagen": "img/productos/13.jpg",
-    "agotado": false
+    "agotado": true
   },
   {
     "id": "p14",
@@ -195,7 +195,7 @@
     "categoria": "Higiene personal",
     "descripcion": "Complejo hidratante con vitamina C y protección hasta 72 horas.",
     "imagen": "img/productos/20.jpg",
-    "agotado": false
+    "agotado": true
   }
 
   ,
@@ -290,7 +290,7 @@
     "categoria": "Maquillaje",
     "descripcion": "Corrector 2 en 1 para contorno e iluminador.",
     "imagen": "img/productos/30.jpg",
-    "agotado": false
+    "agotado": true
   },
   {
     "id": "p31",
