@@ -136,7 +136,7 @@
     "categoria": "Manos",
     "descripcion": "Ayuda a prevenir signos de envejecimiento prematuro.",
     "imagen": "img/productos/14.jpg",
-    "agotado": false
+    "agotado": true
   },
   {
     "id": "p15",
@@ -156,7 +156,7 @@
     "categoria": "Maquillaje",
     "descripcion": "Difumina poros y prolonga la duración del maquillaje.",
     "imagen": "img/productos/16.jpg",
-    "agotado": false
+    "agotado": true
   },
   {
     "id": "p17",
@@ -396,12 +396,12 @@
   },
   {
     "id": "p42",
-    "nombre": "Bálsamo para Labios Sabor Fresa",
+    "nombre": "Desodorante antimanchas roll on, aclarador",
     "precio": 18,
     "categoria": "Maquillaje",
     "descripcion": "Bálsamo hidratante para labios con sabor fresa.",
     "imagen": "img/productos/42.jpg",
-    "agotado": false
+    "agotado": true
   },
   {
     "id": "p43",
@@ -420,5 +420,55 @@
     "descripcion": "Cepillo para cabello BAUSSE. Ideal para uso diario.",
     "imagen": "img/productos/44.jpg",
     "agotado": false
-  }
+  },
+{
+  "id": "p45",
+  "nombre": "Desodorante antimanchas roll on, aclarador",
+  "precio_original": 143,
+  "precio": 100,
+  "categoria": "Higiene personal",
+  "descripcion": "Desodorante roll-on antimanchas con efecto aclarador. Ideal para uso diario.",
+  "imagen": "img/productos/45.jfif",
+  "agotado": false
+},
+{
+  "id": "p46",
+  "nombre": "Perfume para caballero Aromático Herbal",
+  "precio_original": 765,
+  "precio": 459,
+  "categoria": "Perfumes",
+  "descripcion": "Fragancia para caballero de perfil aromático herbal, fresca y elegante para uso diario.",
+  "imagen": "img/productos/46.jfif",
+  "agotado": false
+},
+{
+  "id": "p47",
+  "nombre": "Triple Exfoliante Antiseñales",
+  "precio_original": 370,
+  "precio": 225,
+  "categoria": "Facial",
+  "descripcion": "Unifica inmediatamente la textura de la piel y ayuda a reducir líneas finas. Ideal para rutina antiseñales.",
+  "imagen": "img/productos/47.jfif",
+  "agotado": false
+},
+{
+  "id": "p48",
+  "nombre": "Crema nutritiva para cuerpo Frutas Rojas 400 ml",
+  "precio_original": 269,
+  "precio": 189,
+  "categoria": "Cuerpo",
+  "descripcion": "Crema nutritiva corporal con aroma a frutas rojas. Hidratación y suavidad para uso diario. Contenido 400 ml.",
+  "imagen": "img/productos/48.jfif",
+  "agotado": false
+},
+{
+  "id": "p49",
+  "nombre": "Super Sérum Reductor de Arrugas 30 ml",
+  "precio_original": 1019,
+  "precio": 500,
+  "categoria": "Facial",
+  "descripcion": "Sérum antiseñales que ayuda a reducir la apariencia de arrugas. Ideal para rutina de noche. Contenido 30 ml.",
+  "imagen": "img/productos/49.jfif",
+  "agotado": false
+}
 ]
