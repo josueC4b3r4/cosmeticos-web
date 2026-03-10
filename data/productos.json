@@ -128,26 +128,7 @@
     "imagen": "img/productos/13.jpg",
     "agotado": true
   },
-  {
-    "id": "p14",
-    "nombre": "Pulpa Hidratante para Manos Tukuma",
-    "precio_original": 209,
-    "precio": 130,
-    "categoria": "Manos",
-    "descripcion": "Ayuda a prevenir signos de envejecimiento prematuro.",
-    "imagen": "img/productos/14.jpg",
-    "agotado": true
-  },
-  {
-    "id": "p15",
-    "nombre": "Lápiz Retráctil para Ojos Negro",
-    "precio_original": 370,
-    "precio": 250,
-    "categoria": "Maquillaje",
-    "descripcion": "Delineado intenso y preciso con textura suave.",
-    "imagen": "img/productos/15.jpg",
-    "agotado": false
-  },
+  
   {
     "id": "p16",
     "nombre": "Primer Blur Piel Mixta",
@@ -212,22 +193,13 @@
   {
     "id": "p22",
     "nombre": "Protector Solar Facial Mate con Color Medium",
-    "precio": 179,
+    "precio": 194,
     "categoria": "Facial",
     "descripcion": "Protector solar facial con acabado mate y color medium. Con ácido hialurónico.",
     "imagen": "img/productos/22.jpg",
     "agotado": false
   },
-  {
-    "id": "p23",
-    "nombre": "Pulpa Exfoliante para Manos y Pies",
-    "precio_original": 209,
-    "precio": 127,
-    "categoria": "Manos",
-    "descripcion": "Exfolia y ayuda a restaurar la piel, dejándola nutrida y suave.",
-    "imagen": "img/productos/23.jpg",
-    "agotado": false
-  },
+  
   {
     "id": "p24",
     "nombre": "Labial Cremoso",
@@ -394,15 +366,7 @@
     "imagen": "img/productos/41.jpg",
     "agotado": false
   },
-  {
-    "id": "p42",
-    "nombre": "Desodorante antimanchas roll on, aclarador",
-    "precio": 18,
-    "categoria": "Maquillaje",
-    "descripcion": "Bálsamo hidratante para labios con sabor fresa.",
-    "imagen": "img/productos/42.jpg",
-    "agotado": true
-  },
+  
   {
     "id": "p43",
     "nombre": "Aceite Natural (Coco, Almendras, Ricino y Glicerina)",
@@ -421,16 +385,7 @@
     "imagen": "img/productos/44.jpg",
     "agotado": false
   },
-{
-  "id": "p45",
-  "nombre": "Desodorante antimanchas roll on, aclarador",
-  "precio_original": 143,
-  "precio": 100,
-  "categoria": "Higiene personal",
-  "descripcion": "Desodorante roll-on antimanchas con efecto aclarador. Ideal para uso diario.",
-  "imagen": "img/productos/45.jfif",
-  "agotado": false
-},
+
 {
   "id": "p46",
   "nombre": "Perfume para caballero Aromático Herbal",
@@ -469,6 +424,73 @@
   "categoria": "Facial",
   "descripcion": "Sérum antiseñales que ayuda a reducir la apariencia de arrugas. Ideal para rutina de noche. Contenido 30 ml.",
   "imagen": "img/productos/49.jfif",
+  "agotado": false
+},
+{
+  "id": "p50",
+  "nombre": "Gloss Italia Delux",
+  "precio": 65,
+  "categoria": "Maquillaje",
+  "descripcion": "Gloss con acabado brillante para un look natural o glam.",
+  "imagen": "img/productos/50.jfif",
+  "agotado": false
+},
+{
+  "id": "p51",
+  "nombre": "Base de maquillaje acabado mate (cobertura media)",
+  "precio": 185,
+  "categoria": "Maquillaje",
+  "descripcion": "Base con acabado mate y cobertura media para un tono uniforme.",
+  "imagen": "img/productos/51.jfif",
+  "agotado": false
+},
+{
+  "id": "p52",
+  "nombre": "Lápiz delineador retráctil para cejas (efecto micro blading)",
+  "precio": 78,
+  "categoria": "Maquillaje",
+  "descripcion": "Fórmula de larga duración, efecto micro blading y cepillo para difuminar.",
+  "imagen": "img/productos/52.jfif",
+  "agotado": false
+},
+{
+  "id": "p53",
+  "nombre": "Kit para el cuidado facial (control de grasa, acabado mate)",
+  "precio_original": 445,
+  "precio": 299,
+  "categoria": "Facial",
+  "descripcion": "Kit facial para control de grasa con acabado mate. Ayuda a aumentar la hidratación natural de la piel.",
+  "imagen": "img/productos/53.jfif",
+  "agotado": false
+},
+{
+  "id": "p54",
+  "nombre": "Crema nutritiva para cuerpo (repuesto) Avellana y Oasis 400 ml",
+  "precio_original": 205,
+  "precio": 144,
+  "categoria": "Cuerpo",
+  "descripcion": "Repuesto de crema nutritiva corporal con aroma Avellana y Oasis. Contenido 400 ml.",
+  "imagen": "img/productos/54.jfif",
+  "agotado": false
+},
+{
+  "id": "p55",
+  "nombre": "Frescor Eau de Toilette 150 ml (precio especial)",
+  "precio_original": 590,
+  "precio": 384,
+  "categoria": "Perfumes",
+  "descripcion": "Eau de toilette 150 ml con precio especial. Fragancia fresca para uso diario.",
+  "imagen": "img/productos/55.jfif",
+  "agotado": false
+},
+{
+  "id": "p56",
+  "nombre": "Kaiak Eau de Toilette 100 ml (Aromático amaderado)",
+  "precio_original": 765,
+  "precio": 469,
+  "categoria": "Perfumes",
+  "descripcion": "Fragancia aromática amaderada. Presentación 100 ml.",
+  "imagen": "img/productos/56.jfif",
   "agotado": false
 }
 ]
