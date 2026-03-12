@@ -493,4 +493,25 @@
   "imagen": "img/productos/56.jfif",
   "agotado": false
 }
+,
+{
+  "id": "p57",
+  "nombre": "Kit para el cuidado de los pies (guayaba y maracuyá)",
+  "precio_original": 200,
+  "precio": 112,
+  "categoria": "Cuidado personal",
+  "descripcion": "Kit para el cuidado de los pies que brinda frescura y suavidad con delicioso aroma a guayaba y maracuyá.",
+  "imagen": "img/productos/57.jfif",
+  "agotado": false
+},
+{
+  "id": "p58",
+  "nombre": "Esmalte para uñas de larga duración",
+  "precio_original": 151,
+  "precio": 74,
+  "categoria": "Maquillaje",
+  "descripcion": "Esmalte para uñas con cobertura uniforme y mayor duración.",
+  "imagen": "img/productos/58.jfif",
+  "agotado": false
+}
 ]
