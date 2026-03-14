@@ -190,15 +190,6 @@
     "imagen": "img/productos/21.jpg",
     "agotado": false
   },
-  {
-    "id": "p22",
-    "nombre": "Protector Solar Facial Mate con Color Medium",
-    "precio": 194,
-    "categoria": "Facial",
-    "descripcion": "Protector solar facial con acabado mate y color medium. Con ácido hialurónico.",
-    "imagen": "img/productos/22.jpg",
-    "agotado": false
-  },
   
   {
     "id": "p24",
@@ -281,19 +272,8 @@
     "descripcion": "Gel exfoliante corporal con aceite de aguacate y jalea real. Deja la piel suave y renovada.",
     "imagen": "img/productos/32.jpg",
     "agotado": false
-  }
-
-  ,
-  {
-    "id": "p33",
-    "nombre": "Pulpa Hidratante Corporal Castaña 200ml",
-    "precio_original": 229,
-    "precio": 185,
-    "categoria": "Cuerpo",
-    "descripcion": "Potente tratamiento biocosmético que combate los indicadores del estrés cutáneo.",
-    "imagen": "img/productos/33.jpg",
-    "agotado": false
   },
+  
   {
     "id": "p34",
     "nombre": "Crema de Manos (Glicerina y Aceite de Almendras)",
@@ -416,16 +396,7 @@
   "imagen": "img/productos/48.jfif",
   "agotado": false
 },
-{
-  "id": "p49",
-  "nombre": "Super Sérum Reductor de Arrugas 30 ml",
-  "precio_original": 1019,
-  "precio": 500,
-  "categoria": "Facial",
-  "descripcion": "Sérum antiseñales que ayuda a reducir la apariencia de arrugas. Ideal para rutina de noche. Contenido 30 ml.",
-  "imagen": "img/productos/49.jfif",
-  "agotado": false
-},
+
 {
   "id": "p50",
   "nombre": "Gloss Italia Delux",
