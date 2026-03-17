@@ -116,7 +116,7 @@
     "categoria": "Manos",
     "descripcion": "Nutre con probióticos, manteca de cacao y aceite de linaza.",
     "imagen": "img/productos/12.jpg",
-    "agotado": false
+    "agotado": true
   },
   {
     "id": "p13",
