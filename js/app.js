@@ -96,7 +96,7 @@ function render(list) {
         ${isAgotado ? '<span class="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">Agotado</span>' : ""}
       </div>
 
-     <div class="p-4 flex flex-col justify-between min-h-[170px]">
+     <div class="p-4 flex flex-col justify-between">
         <div>
           <div class="flex justify-between items-center mb-2">
             <span class="bg-indigo-100 text-indigo-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">${p.categoria}</span>
