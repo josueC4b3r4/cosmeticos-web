@@ -4,35 +4,77 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Catálogo de Cosméticos</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Tailwind CDN para prototipado rápido -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header class="header">
-  <div class="header-inner">
-    <div class="brand">
-      <h1>Catálogo de Cosmeticos Edith</h1>
-      <p>Catálogo • Skincare • Maquillaje • Perfumes</p>
-    </div>
+<body class="bg-gray-50 text-gray-900">
 
-    <div class="controls">
-      <input id="search" class="input" type="search" placeholder="Buscar (labial, crema, perfume...)" />
-      <select id="category" class="select">
-        <option value="all">Todas las categorías</option>
-      </select>
+  <!-- Encabezado -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+      <div>
+        <h1 class="text-3xl font-bold">Catálogo de Cosméticos Edith</h1>
+        <p class="mt-1 text-sm text-gray-500">Catálogo • Skincare • Maquillaje • Perfumes</p>
+      </div>
+      <div class="mt-4 md:mt-0 flex space-x-2">
+        <input id="search" type="search" placeholder="Buscar (labial, crema, perfume...)" class="px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+        <select id="category" class="px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+          <option value="all">Todas las categorías</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección héroe -->
+  <section class="relative bg-cover bg-center" id="hero" style="background-image: url('https://images.pexels.com/photos/3373744/pexels-photo-3373744.jpeg?auto=compress&cs=tinysrgb&w=1600');">
+    <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+    <div class="max-w-7xl mx-auto px-4 py-24 relative z-10 text-white">
+      <h2 class="text-4xl font-extrabold mb-4 drop-shadow-lg">Ofertas y nuevos productos</h2>
+      <p class="text-lg mb-8 max-w-lg">Descubre nuestras últimas incorporaciones y consiente tu piel con ingredientes naturales.</p>
+      <a href="#grid" class="bg-white text-gray-900 px-6 py-3 rounded-md shadow-lg font-semibold hover:bg-gray-100 transition">Explorar catálogo</a>
+    </div>
+    <div class="absolute bottom-6 right-6 bg-indigo-600 text-white px-4 py-2 rounded-full shadow-lg animate-bounce">✨ Catálogo Abril 2026</div>
+  </section>
+
+  <!-- Grid de productos -->
+  <main class="max-w-7xl mx-auto px-4 py-12">
+    <div id="grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"></div>
+  </main>
+
+  <!-- Modal para vista rápida -->
+  <div id="quickViewModal" class="fixed z-50 inset-0 overflow-y-auto hidden">
+    <div class="flex items-center justify-center min-h-screen p-4 text-center">
+      <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+        <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+      </div>
+      <div class="inline-block bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full">
+        <div class="bg-white p-6">
+          <div class="flex justify-between items-start">
+            <h3 id="modalProductName" class="text-xl font-semibold"></h3>
+            <button id="closeModalBtn" class="text-gray-400 hover:text-gray-500">
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+          <div class="mt-4 flex flex-col sm:flex-row gap-4">
+            <img id="modalProductImage" src="" alt="" class="w-full sm:w-1/2 rounded-lg object-cover">
+            <div>
+              <p id="modalProductDescription" class="text-gray-700"></p>
+              <div id="modalProductPrice" class="mt-4 font-bold text-lg"></div>
+              <div class="mt-6 flex space-x-3">
+                <a id="modalWaBuy" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md shadow-lg transition">Pedir por WhatsApp</a>
+                <a id="modalWaShare" target="_blank" class="bg-gray-200 hover:bg-gray-300 text-gray-900 font-bold py-2 px-4 rounded-md shadow-lg transition">Compartir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</header>
 
-  <section class="hero">
-  <div>
-    <h2>Ofertas y nuevos productos. </h2>
-    <small>Comparte o pide por WhatsApp en un toque.</small>
-  </div>
-  <div class="pill">✨ Catálogo Marzo 2026</div>
-</section>
-
-<section id="grid" class="grid"></section>
-
+  <!-- Botón de volver arriba -->
+  <button id="scrollTopBtn" class="fixed bottom-8 right-8 bg-indigo-600 hover:bg-indigo-700 text-white p-3 rounded-full shadow-lg hidden">↑</button>
 
   <script src="js/app.js"></script>
 </body>
