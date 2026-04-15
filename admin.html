@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin | Cosméticos Edith</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/admin.css">
+
+  <style>
+    .admin-wrap{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .admin-card{
+      background: #fff;
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.08);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .admin-grid{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .admin-grid .full{
+      grid-column: 1 / -1;
+    }
+
+    .admin-input, .admin-textarea{
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid rgba(0,0,0,.12);
+      border-radius: 12px;
+      font: inherit;
+    }
+
+    .admin-textarea{
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .admin-actions{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top: 12px;
+    }
+
+    .admin-btn{
+      border: 0;
+      border-radius: 12px;
+      padding: 12px 16px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .admin-btn-primary{ background:#7c3aed; color:#fff; }
+    .admin-btn-secondary{ background:#ece7ff; color:#4c1d95; }
+    .admin-btn-danger{ background:#fee2e2; color:#991b1b; }
+    .admin-btn-dark{ background:#111827; color:#fff; }
+
+    table{
+      width:100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th, td{
+      padding: 12px;
+      border-bottom: 1px solid rgba(0,0,0,.08);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th{
+      background:#fafafa;
+    }
+
+    .mini-actions{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .hidden{
+      display:none;
+    }
+
+    .price-control{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .price-control .admin-input{
+      flex:1;
+      text-align:center;
+    }
+
+    .price-step{
+      border:0;
+      border-radius:12px;
+      padding:12px 14px;
+      font-weight:800;
+      cursor:pointer;
+      background:#f3e8ff;
+      color:#5b21b6;
+      min-width:60px;
+      transition:transform .15s ease, filter .15s ease;
+    }
+
+    .price-step:hover{
+      transform: translateY(-1px);
+      filter: brightness(.98);
+    }
+
+    select.admin-input{
+      appearance:none;
+      background:
+        linear-gradient(45deg, transparent 50%, #7c3aed 50%),
+        linear-gradient(135deg, #7c3aed 50%, transparent 50%),
+        rgba(255,255,255,0.96);
+      background-position:
+        calc(100% - 18px) calc(50% - 3px),
+        calc(100% - 12px) calc(50% - 3px),
+        0 0;
+      background-size:6px 6px, 6px 6px, 100% 100%;
+      background-repeat:no-repeat;
+      padding-right:40px;
+    }
+
+    @media (max-width: 900px){
+      .admin-grid{
+        grid-template-columns: 1fr;
+      }
+
+      table{
+        display:block;
+        overflow:auto;
+      }
+    }
+
+    @media (max-width: 640px){
+      .price-control{
+        gap:8px;
+      }
+
+      .price-step{
+        min-width:52px;
+        padding:12px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-wrap">
+    <header class="admin-card">
+      <h1>Panel de administración</h1>
+      <p>Gestiona productos del catálogo Edith.</p>
+    </header>
+
+    <section id="loginSection" class="admin-card">
+      <h2>Iniciar sesión</h2>
+      <div class="admin-grid">
+        <div>
+          <label for="loginEmail">Correo</label>
+          <input id="loginEmail" class="admin-input" type="email" placeholder="tu_correo@ejemplo.com">
+        </div>
+        <div>
+          <label for="loginPassword">Contraseña</label>
+          <input id="loginPassword" class="admin-input" type="password" placeholder="********">
+        </div>
+      </div>
+      <div class="admin-actions">
+        <button id="loginBtn" class="admin-btn admin-btn-primary">Entrar</button>
+      </div>
+      <p id="loginMsg"></p>
+    </section>
+
+    <section id="adminSection" class="hidden">
+      <div class="admin-card">
+        <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:center;">
+          <div>
+            <h2 style="margin:0;">Productos</h2>
+            <p id="sessionInfo" style="margin:.4rem 0 0;"></p>
+          </div>
+          <button id="logoutBtn" class="admin-btn admin-btn-dark">Cerrar sesión</button>
+        </div>
+      </div>
+
+      <section class="admin-card">
+        <h2 id="formTitle">Agregar producto</h2>
+
+        <form id="productForm">
+          <div class="admin-grid">
+            <div>
+              <label for="id">ID</label>
+              <input id="id" class="admin-input" type="text" placeholder="p59" required>
+            </div>
+
+            <div>
+              <label for="nombre">Nombre</label>
+              <input id="nombre" class="admin-input" type="text" required>
+            </div>
+
+            <div>
+  <label for="precio_original">Precio original</label>
+  <input id="precio_original" class="admin-input" type="number" step="1" min="0" placeholder="Opcional">
+</div>
+
+<div>
+  <label for="precio">Precio</label>
+  <input id="precio" class="admin-input" type="number" step="1" min="0" required>
+</div>
+
+            <div>
+              <label for="categoria">Categoría</label>
+              <select id="categoria" class="admin-input" required>
+                <option value="">Selecciona una categoría</option>
+                <option value="Accesorios">Accesorios</option>
+                <option value="Cuerpo">Cuerpo</option>
+                <option value="Facial">Facial</option>
+                <option value="Fragancias">Fragancias</option>
+                <option value="Higiene personal">Higiene personal</option>
+                <option value="Cuidado personal">Cuidado personal</option>
+                <option value="Manos">Manos</option>
+                <option value="Maquillaje">Maquillaje</option>
+                <option value="Perfumes">Perfumes</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="imagen">Ruta de imagen</label>
+              <input id="imagen" class="admin-input" type="text" placeholder="img/productos/59.jpg">
+            </div>
+
+            <div class="full">
+              <label for="descripcion">Descripción</label>
+              <textarea id="descripcion" class="admin-textarea"></textarea>
+            </div>
+
+            <div>
+              <label>
+                <input id="agotado" type="checkbox">
+                Agotado
+              </label>
+            </div>
+          </div>
+
+          <div class="admin-actions">
+            <button type="submit" class="admin-btn admin-btn-primary">Guardar producto</button>
+            <button type="button" id="resetBtn" class="admin-btn admin-btn-secondary">Limpiar formulario</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="admin-card">
+        <h2>Lista de productos</h2>
+        <div style="overflow:auto;">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Categoría</th>
+                <th>Agotado</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="productsTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>
