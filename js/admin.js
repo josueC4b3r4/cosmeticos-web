@@ -13,6 +13,8 @@ const productForm = document.getElementById("productForm");
 const formTitle = document.getElementById("formTitle");
 const resetBtn = document.getElementById("resetBtn");
 const tableBody = document.getElementById("productsTableBody");
+const editNotice = document.getElementById("editNotice");
+const cancelEditBtn = document.getElementById("cancelEditBtn");
 
 const fields = {
   id: document.getElementById("id"),
@@ -51,11 +53,25 @@ function showAdmin(email) {
   sessionInfo.textContent = `Sesión activa: ${email}`;
 }
 
+function setEditMode(active, id = "") {
+  if (active) {
+    formTitle.textContent = `Editando producto: ${id}`;
+    editNotice.classList.remove("hidden");
+    cancelEditBtn.classList.remove("hidden");
+    resetBtn.textContent = "Restablecer";
+  } else {
+    formTitle.textContent = "Agregar producto";
+    editNotice.classList.add("hidden");
+    cancelEditBtn.classList.add("hidden");
+    resetBtn.textContent = "Limpiar formulario";
+  }
+}
+
 function clearForm() {
   productForm.reset();
   editingId = null;
   fields.id.disabled = false;
-  formTitle.textContent = "Agregar producto";
+  setEditMode(false);
 }
 
 function getFormData() {
@@ -137,7 +153,7 @@ async function editProduct(id) {
   }
 
   editingId = data.id;
-  formTitle.textContent = `Editando producto: ${data.id}`;
+  setEditMode(true, data.id);
 
   fields.id.value = data.id;
   fields.id.disabled = true;
@@ -149,7 +165,7 @@ async function editProduct(id) {
   fields.descripcion.value = data.descripcion ?? "";
   fields.agotado.checked = data.agotado === true;
 
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  productForm.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 async function deleteProduct(id) {
@@ -267,3 +283,5 @@ async function checkSession() {
 }
 
 checkSession();
+
+cancelEditBtn.addEventListener("click", clearForm);

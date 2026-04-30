@@ -83,50 +83,36 @@ function render(list) {
     const isAgotado = p.agotado === true;
 
     const card = document.createElement("article");
-    card.className =
-      "relative bg-white rounded-lg shadow-md overflow-hidden transform transition-opacity duration-500 ease-out opacity-0 translate-y-4 hover:shadow-xl";
+    card.className = "card";
 
     if (isAgotado) {
-      card.classList.add("grayscale", "opacity-50", "cursor-not-allowed");
+      card.classList.add("card-soldout");
     }
 
     card.innerHTML = `
-      <div class="relative">
-        <img src="${p.imagen}" alt="${p.nombre}" class="w-full h-48 object-cover" loading="lazy">
-        ${isAgotado ? '<span class="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">Agotado</span>' : ""}
-      </div>
-
-     <div class="p-4 flex flex-col justify-between">
-        <div>
-          <div class="flex justify-between items-center mb-2">
-            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">${p.categoria}</span>
-            ${hasDiscount ? '<span class="text-xs font-medium text-red-600">Oferta</span>' : ""}
-          </div>
-
-          <h3 class="text-lg font-semibold truncate" title="${p.nombre}">${p.nombre}</h3>
-          <p class="text-sm text-gray-600 mt-1 truncate">${p.descripcion}</p>
+      <img src="${p.imagen}" alt="${p.nombre}" loading="lazy">
+      <div class="content">
+        <div class="badge-row">
+          <span class="badge">${p.categoria}</span>
+          ${hasDiscount ? '<span class="badge">Oferta</span>' : ""}
+          ${isAgotado ? '<span class="soldout">Agotado</span>' : ""}
         </div>
-
-        <div class="mt-4">
-          ${
-            hasDiscount
-              ? `<div class="flex items-baseline space-x-2">
-                   <span class="text-gray-400 line-through text-sm">${moneyMXN(p.precio_original)}</span>
-                   <span class="text-lg font-bold text-red-600">${moneyMXN(p.precio)}</span>
-                 </div>`
-              : `<div class="text-lg font-bold text-gray-800">${moneyMXN(p.precio)}</div>`
-          }
-        </div>
+        <h3 class="title" title="${p.nombre}">${p.nombre}</h3>
+        <p class="desc">${p.descripcion || "Sin descripción"}</p>
+        ${
+          hasDiscount
+            ? `<div class="price-row"><span class="price-original">${moneyMXN(p.precio_original)}</span><span class="price-offer">${moneyMXN(p.precio)}</span></div>`
+            : `<div class="price">${moneyMXN(p.precio)}</div>`
+        }
       </div>
-
-      <div class="p-4 flex space-x-2 border-t">
+      <div class="actions">
         ${
           isAgotado
-            ? '<span class="flex-1 bg-gray-300 text-gray-700 text-center py-2 rounded-md cursor-not-allowed" title="Producto agotado">Agotado</span>'
-            : `<a class="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-center py-2 rounded-md" target="_blank" rel="noopener" href="${waLinkToMyNumber(p, urlProducto)}">Pedir</a>`
+            ? '<span class="btn btn-disabled" title="Producto agotado">Agotado</span>'
+            : `<a class="btn btn-wa" target="_blank" rel="noopener" href="${waLinkToMyNumber(p, urlProducto)}">Pedir por WhatsApp</a>`
         }
-        <a class="bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-md" target="_blank" rel="noopener" href="${waShareLink(p, urlProducto)}">Compartir</a>
-        <button class="bg-white border border-gray-300 hover:bg-gray-100 text-gray-600 px-3 py-2 rounded-md" data-id="${p.id}">Ver</button>
+        <a class="btn btn-share" target="_blank" rel="noopener" href="${waShareLink(p, urlProducto)}">Compartir</a>
+        <button class="btn" data-id="${p.id}">Ver detalle</button>
       </div>
     `;
 
