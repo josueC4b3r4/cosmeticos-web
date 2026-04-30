@@ -952,3 +952,14 @@ img {
     width: 100%;
   }
 }
+.modal { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 16px; }
+.modal.hidden { display: none; }
+.modal-overlay { position: absolute; inset: 0; background: rgba(20,10,25,.55); }
+.modal-card { position: relative; width: min(920px, 100%); background: #fff; border-radius: 18px; padding: 20px; z-index: 1; }
+.modal-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+.modal-image { width: 100%; max-height: 360px; object-fit: contain; background: #f9f5fb; border-radius: 12px; }
+.modal-close { position: absolute; top: 10px; right: 12px; border: none; background: transparent; font-size: 30px; cursor: pointer; }
+.modal-actions { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+.scroll-top { position: fixed; right: 16px; bottom: 16px; width: 46px; height: 46px; border-radius: 999px; border: 0; background: linear-gradient(135deg, var(--secondary), var(--primary)); color:#fff; font-size:22px; cursor:pointer; z-index:20; }
+.hidden { display: none !important; }
+@media (max-width: 760px){ .modal-layout{ grid-template-columns:1fr; } }
