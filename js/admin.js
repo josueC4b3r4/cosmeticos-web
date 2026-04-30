@@ -13,6 +13,16 @@ const productForm = document.getElementById("productForm");
 const formTitle = document.getElementById("formTitle");
 const resetBtn = document.getElementById("resetBtn");
 const tableBody = document.getElementById("productsTableBody");
+const searchInput = document.getElementById("searchInput");
+const categoryFilter = document.getElementById("categoryFilter");
+const stockFilter = document.getElementById("stockFilter");
+const tableStatus = document.getElementById("tableStatus");
+const toast = document.getElementById("toast");
+
+const metricTotal = document.getElementById("metricTotal");
+const metricAvailable = document.getElementById("metricAvailable");
+const metricOut = document.getElementById("metricOut");
+const metricCategories = document.getElementById("metricCategories");
 
 const fields = {
   id: document.getElementById("id"),
@@ -26,6 +36,8 @@ const fields = {
 };
 
 let editingId = null;
+let allProducts = [];
+let toastTimer = null;
 
 document.querySelectorAll(".price-step").forEach(btn => {
   btn.addEventListener("click", () => {
@@ -51,11 +63,61 @@ function showAdmin(email) {
   sessionInfo.textContent = `Sesión activa: ${email}`;
 }
 
+function showToast(message) {
+  toast.textContent = message;
+  toast.classList.remove("hidden");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.add("hidden"), 2400);
+}
+
 function clearForm() {
   productForm.reset();
   editingId = null;
   fields.id.disabled = false;
   formTitle.textContent = "Agregar producto";
+}
+
+function updateMetrics(items) {
+  const total = items.length;
+  const out = items.filter(p => p.agotado).length;
+  const available = total - out;
+  const categories = new Set(items.map(p => p.categoria).filter(Boolean)).size;
+
+  metricTotal.textContent = String(total);
+  metricAvailable.textContent = String(available);
+  metricOut.textContent = String(out);
+  metricCategories.textContent = String(categories);
+}
+
+function updateCategoryFilter(items) {
+  const categories = [...new Set(items.map(p => p.categoria).filter(Boolean))].sort();
+  const current = categoryFilter.value;
+  categoryFilter.innerHTML = `<option value="">Todas las categorías</option>`;
+  for (const category of categories) {
+    const option = document.createElement("option");
+    option.value = category;
+    option.textContent = category;
+    categoryFilter.appendChild(option);
+  }
+  categoryFilter.value = categories.includes(current) ? current : "";
+}
+
+function getFilteredProducts() {
+  const query = searchInput.value.trim().toLowerCase();
+  const category = categoryFilter.value;
+  const stock = stockFilter.value;
+
+  return allProducts.filter(product => {
+    const inSearch = !query
+      || (product.id ?? "").toLowerCase().includes(query)
+      || (product.nombre ?? "").toLowerCase().includes(query);
+    const inCategory = !category || product.categoria === category;
+    const inStock = stock === "all"
+      || (stock === "available" && !product.agotado)
+      || (stock === "out" && product.agotado);
+
+    return inSearch && inCategory && inStock;
+  });
 }
 
 function getFormData() {
@@ -84,7 +146,10 @@ async function loadProducts() {
     return;
   }
 
-  renderTable(data || []);
+  allProducts = data || [];
+  updateMetrics(allProducts);
+  updateCategoryFilter(allProducts);
+  applyFilters();
 }
 
 function renderTable(items) {
@@ -121,6 +186,13 @@ function renderTable(items) {
       await deleteProduct(id);
     });
   });
+  tableStatus.textContent = items.length === 0
+    ? "No hay productos para mostrar con estos filtros."
+    : `Mostrando ${items.length} producto(s).`;
+}
+
+function applyFilters() {
+  renderTable(getFilteredProducts());
 }
 
 async function editProduct(id) {
@@ -172,6 +244,7 @@ async function deleteProduct(id) {
   }
 
   await loadProducts();
+  showToast("Producto eliminado correctamente");
 }
 
 productForm.addEventListener("submit", async (e) => {
@@ -183,6 +256,8 @@ productForm.addEventListener("submit", async (e) => {
     alert("Completa los campos obligatorios");
     return;
   }
+
+  const wasEditing = Boolean(editingId);
 
   if (editingId) {
     const { error } = await supabase
@@ -217,6 +292,7 @@ productForm.addEventListener("submit", async (e) => {
 
   clearForm();
   await loadProducts();
+  showToast(wasEditing ? "Producto actualizado" : "Producto agregado");
 });
 
 resetBtn.addEventListener("click", clearForm);
@@ -267,3 +343,6 @@ async function checkSession() {
 }
 
 checkSession();
+searchInput.addEventListener("input", applyFilters);
+categoryFilter.addEventListener("change", applyFilters);
+stockFilter.addEventListener("change", applyFilters);

@@ -6,168 +6,16 @@
   <title>Admin | Cosméticos Edith</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/admin.css">
-
-  <style>
-    .admin-wrap{
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-
-    .admin-card{
-      background: #fff;
-      border: 1px solid rgba(0,0,0,.08);
-      border-radius: 18px;
-      box-shadow: 0 12px 30px rgba(0,0,0,.08);
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-
-    .admin-grid{
-      display:grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
-
-    .admin-grid .full{
-      grid-column: 1 / -1;
-    }
-
-    .admin-input, .admin-textarea{
-      width: 100%;
-      padding: 12px 14px;
-      border: 1px solid rgba(0,0,0,.12);
-      border-radius: 12px;
-      font: inherit;
-    }
-
-    .admin-textarea{
-      min-height: 100px;
-      resize: vertical;
-    }
-
-    .admin-actions{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      margin-top: 12px;
-    }
-
-    .admin-btn{
-      border: 0;
-      border-radius: 12px;
-      padding: 12px 16px;
-      font-weight: 800;
-      cursor: pointer;
-    }
-
-    .admin-btn-primary{ background:#7c3aed; color:#fff; }
-    .admin-btn-secondary{ background:#ece7ff; color:#4c1d95; }
-    .admin-btn-danger{ background:#fee2e2; color:#991b1b; }
-    .admin-btn-dark{ background:#111827; color:#fff; }
-
-    table{
-      width:100%;
-      border-collapse: collapse;
-      font-size: 14px;
-    }
-
-    th, td{
-      padding: 12px;
-      border-bottom: 1px solid rgba(0,0,0,.08);
-      text-align: left;
-      vertical-align: top;
-    }
-
-    th{
-      background:#fafafa;
-    }
-
-    .mini-actions{
-      display:flex;
-      gap:8px;
-      flex-wrap:wrap;
-    }
-
-    .hidden{
-      display:none;
-    }
-
-    .price-control{
-      display:flex;
-      align-items:center;
-      gap:10px;
-    }
-
-    .price-control .admin-input{
-      flex:1;
-      text-align:center;
-    }
-
-    .price-step{
-      border:0;
-      border-radius:12px;
-      padding:12px 14px;
-      font-weight:800;
-      cursor:pointer;
-      background:#f3e8ff;
-      color:#5b21b6;
-      min-width:60px;
-      transition:transform .15s ease, filter .15s ease;
-    }
-
-    .price-step:hover{
-      transform: translateY(-1px);
-      filter: brightness(.98);
-    }
-
-    select.admin-input{
-      appearance:none;
-      background:
-        linear-gradient(45deg, transparent 50%, #7c3aed 50%),
-        linear-gradient(135deg, #7c3aed 50%, transparent 50%),
-        rgba(255,255,255,0.96);
-      background-position:
-        calc(100% - 18px) calc(50% - 3px),
-        calc(100% - 12px) calc(50% - 3px),
-        0 0;
-      background-size:6px 6px, 6px 6px, 100% 100%;
-      background-repeat:no-repeat;
-      padding-right:40px;
-    }
-
-    @media (max-width: 900px){
-      .admin-grid{
-        grid-template-columns: 1fr;
-      }
-
-      table{
-        display:block;
-        overflow:auto;
-      }
-    }
-
-    @media (max-width: 640px){
-      .price-control{
-        gap:8px;
-      }
-
-      .price-step{
-        min-width:52px;
-        padding:12px 10px;
-      }
-    }
-  </style>
 </head>
 <body>
   <div class="admin-wrap">
     <header class="admin-card">
       <h1>Panel de administración</h1>
-      <p>Gestiona productos del catálogo Edith.</p>
+      <p>Gestiona productos del catálogo Edith con una vista rápida y controles inteligentes.</p>
     </header>
 
     <section id="loginSection" class="admin-card">
-      <h2>Iniciar sesión</h2>-
+      <h2>Iniciar sesión</h2>
       <div class="admin-grid">
         <div>
           <label for="loginEmail">Correo</label>
@@ -186,14 +34,33 @@
 
     <section id="adminSection" class="hidden">
       <div class="admin-card">
-        <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:center;">
+        <div class="admin-topbar">
           <div>
-            <h2 style="margin:0;">Productos</h2>
-            <p id="sessionInfo" style="margin:.4rem 0 0;"></p>
+            <h2>Productos</h2>
+            <p id="sessionInfo"></p>
           </div>
           <button id="logoutBtn" class="admin-btn admin-btn-dark">Cerrar sesión</button>
         </div>
       </div>
+
+      <section class="admin-card metrics-grid" id="metricsGrid">
+        <article class="metric-card">
+          <span class="metric-label">Total</span>
+          <strong id="metricTotal">0</strong>
+        </article>
+        <article class="metric-card">
+          <span class="metric-label">Activos</span>
+          <strong id="metricAvailable">0</strong>
+        </article>
+        <article class="metric-card">
+          <span class="metric-label">Agotados</span>
+          <strong id="metricOut">0</strong>
+        </article>
+        <article class="metric-card">
+          <span class="metric-label">Categorías</span>
+          <strong id="metricCategories">0</strong>
+        </article>
+      </section>
 
       <section class="admin-card">
         <h2 id="formTitle">Agregar producto</h2>
@@ -211,14 +78,18 @@
             </div>
 
             <div>
-  <label for="precio_original">Precio original</label>
-  <input id="precio_original" class="admin-input" type="number" step="1" min="0" placeholder="Opcional">
-</div>
+              <label for="precio_original">Precio original</label>
+              <input id="precio_original" class="admin-input" type="number" step="1" min="0" placeholder="Opcional">
+            </div>
 
-<div>
-  <label for="precio">Precio</label>
-  <input id="precio" class="admin-input" type="number" step="1" min="0" required>
-</div>
+            <div>
+              <label for="precio">Precio</label>
+              <div class="price-control">
+                <button type="button" class="price-step" data-target="precio" data-step="-100">-100</button>
+                <input id="precio" class="admin-input" type="number" step="1" min="0" required>
+                <button type="button" class="price-step" data-target="precio" data-step="100">+100</button>
+              </div>
+            </div>
 
             <div>
               <label for="categoria">Categoría</label>
@@ -262,7 +133,20 @@
       </section>
 
       <section class="admin-card">
-        <h2>Lista de productos</h2>
+        <div class="table-toolbar">
+          <h2>Lista de productos</h2>
+          <div class="table-filters">
+            <input id="searchInput" class="admin-input" type="search" placeholder="Buscar por ID o nombre...">
+            <select id="categoryFilter" class="admin-input">
+              <option value="">Todas las categorías</option>
+            </select>
+            <select id="stockFilter" class="admin-input">
+              <option value="all">Todos</option>
+              <option value="available">Disponibles</option>
+              <option value="out">Agotados</option>
+            </select>
+          </div>
+        </div>
         <div style="overflow:auto;">
           <table>
             <thead>
@@ -278,9 +162,12 @@
             <tbody id="productsTableBody"></tbody>
           </table>
         </div>
+        <p id="tableStatus" class="table-status"></p>
       </section>
     </section>
   </div>
+
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
 
   <script type="module" src="js/admin.js"></script>
 </body>
