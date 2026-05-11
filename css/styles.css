@@ -1112,3 +1112,42 @@ img {
     gap: 6px;
   }
 }
+
+
+/* ---------- PRODUCT CARD ACTIONS: MOBILE LAYOUT FIX ---------- */
+@media (max-width: 600px) {
+  .card .actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0 0;
+    overflow-x: clip;
+  }
+
+  .card .actions .btn,
+  .card .actions a,
+  .card .actions button {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    min-height: 46px;
+    max-height: 56px;
+    height: auto;
+    padding: 12px 14px;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    box-sizing: border-box;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .card .actions > :first-child {
+    grid-column: 1 / -1;
+  }
+
+  .card .actions > :nth-child(2),
+  .card .actions > :nth-child(3) {
+    grid-column: span 1;
+  }
+}
