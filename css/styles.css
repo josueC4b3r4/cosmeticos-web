@@ -963,3 +963,152 @@ img {
 .scroll-top { position: fixed; right: 16px; bottom: 16px; width: 46px; height: 46px; border-radius: 999px; border: 0; background: linear-gradient(135deg, var(--secondary), var(--primary)); color:#fff; font-size:22px; cursor:pointer; z-index:20; }
 .hidden { display: none !important; }
 @media (max-width: 760px){ .modal-layout{ grid-template-columns:1fr; } }
+
+/* =========================================
+   AJUSTE RESPONSIVE LIMPIO (MÓVIL)
+   Mantiene escritorio y corrige tamaños en celular.
+========================================= */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px 12px 20px;
+  }
+
+  .hero {
+    width: 100%;
+    margin: 0 0 14px;
+    padding: 14px;
+    border-radius: 14px;
+    gap: 12px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .hero small {
+    font-size: 13px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding: 0;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .content {
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .desc {
+    font-size: 13px;
+    min-height: auto;
+  }
+
+  .actions {
+    padding: 10px 12px 12px;
+    gap: 8px;
+  }
+
+  .actions .btn,
+  .actions a,
+  .actions button,
+  .modal-actions .btn {
+    flex: 1 1 calc(50% - 4px);
+    min-width: 0;
+    padding: 9px 10px;
+    font-size: 13px;
+    line-height: 1.2;
+    border-radius: 10px;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .pill {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-inner {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .brand h1 {
+    font-size: clamp(1.6rem, 8vw, 2.1rem);
+    letter-spacing: 0.2px;
+  }
+
+  .brand p {
+    font-size: 12px;
+  }
+
+  .controls,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .input,
+  .select {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+
+  .hero {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .grid {
+    gap: 10px;
+  }
+
+  .card {
+    border-radius: 12px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .actions .btn,
+  .actions a,
+  .actions button,
+  .modal-actions .btn {
+    width: 100%;
+    flex-basis: 100%;
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .modal-card {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
